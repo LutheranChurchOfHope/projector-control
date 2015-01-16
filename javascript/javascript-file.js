@@ -127,6 +127,10 @@ var lens_shift_down = 'lens-shift-down';
 var lens_shift_left = 'lens-shift-left';
 var lens_shift_right = 'lens-shift-right';
 var lens_shift_up = 'lens-shift-up';
+var lens_shift_coarse_down = 'lens-shift-coarse-down';
+var lens_shift_coarse_left = 'lens-shift-coarse-left';
+var lens_shift_coarse_right = 'lens-shift-coarse-right';
+var lens_shift_coarse_up = 'lens-shift-coarse-up';
 var menu_down = 'menu-down';
 var menu_enter = 'menu-enter';
 var menu_left = 'menu-left';
@@ -194,6 +198,10 @@ actions that are supported on at least one device:
 	lens-shift-left
 	lens-shift-right
 	lens-shift-up
+	lens-shift-coarse-down
+	lens-shift-coarse-left
+	lens-shift-coarse-right
+	lens-shift-coarse-up
 	menu-down
 	menu-enter
 	menu-left
@@ -413,6 +421,18 @@ function extronBox (address, port, deviceType, action)
 				break;
 			case 'lens-shift-up':
 				command = 'C5D';
+				break;
+			case 'lens-shift-coarse-down':
+				command = 'C5E%0DC5E';
+				break;
+			case 'lens-shift-coarse-left':
+				command = 'C5F%0DC5F';
+				break;
+			case 'lens-shift-coarse-right':
+				command = 'C60%0DC60';
+				break;
+			case 'lens-shift-coarse-up':
+				command = 'C5D%0DC5D';
 				break;
 			case 'menu-down':
 				command = 'C3D';

@@ -8,6 +8,11 @@
 		font: bold 14pt arial;
 	}
 
+.arial-big-almost
+	{
+		font: bold 20pt arial;
+		text-align: center;
+	}			
 .arial-big
 	{
 		font: bold 22pt arial;
@@ -48,6 +53,13 @@
 	{
 		color: #dddddd;
 	}
+.table-buttons-borderless
+	{
+		/*border: 1px solid white; ...debug...;*/
+		border: none;
+		padding: 8px;
+		text-align: center;
+	}
 .table-buttons
 	{
 		border: 4px solid black;
@@ -78,6 +90,13 @@
 	}
 
 /* start cool button stuff */
+
+.common-minimal
+	{
+		cursor: pointer;
+		transition: all .1s ease;
+		text-decoration: none;
+	}
 
 .common
 	{
