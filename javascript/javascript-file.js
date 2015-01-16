@@ -597,7 +597,31 @@ function extronBox (address, port, deviceType, action)
 		// start and end bytes:
 		command = '%02' + command + '%03';
 	} // end if(); for device
-
+	
+	if (deviceType == 'sharpTV')
+	{
+		
+		var urlStart = urlStart + 'RS|';
+		
+		/*
+			This switch block takes the action you want
+			to execute, and turns it into the
+			the corresponding serial command.
+		*/
+		switch (action)
+		{
+			case 'power-off':
+				command = 'POWR0   ';
+				break;
+			case 'power-on':
+				command = 'POWR1   ';
+				break;
+		}
+		
+		// Add in Sharp's funny little end byte:
+		command = command + '%0D';
+	} // end if(); for device
+	
 	var urlFull = urlStart + command
 	// un-comment next line, when you need to debug:
 	// alert (urlFull);
