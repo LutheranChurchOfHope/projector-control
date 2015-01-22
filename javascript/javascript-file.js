@@ -144,7 +144,11 @@ var power_on = 'power-on';
 var screen_down = 'screen-down';
 var screen_up = 'screen-up';
 var zoom_in = 'zoom-in';
+var zoom_in_coarse = 'zoom-in-coarse';
+var zoom_in_fine = 'zoom-in-fine';
 var zoom_out = 'zoom-out';
+var zoom_out_coarse = 'zoom-out-coarse';
+var zoom_out_fine = 'zoom-out-fine';
 
 
 
@@ -215,7 +219,11 @@ actions that are supported on at least one device:
 	screen-down
 	screen-up
 	zoom-in
+	zoom-in-coarse
+	zoom-in-fine
 	zoom-out
+	zoom-out-coarse
+	zoom-out-fine
 
 
 Note that strings use dashes, whereas variables use underscores.
@@ -494,16 +502,16 @@ function extronBox (address, port, deviceType, action)
 				command = 'OSH:1';
 				break;
 			case 'focus-in-coarse':
-				command = 'VXX:LNSI4=+00200';
+				command = 'VXX%3ALNSI4=%2B00200';
 				break;
 			case 'focus-in-fine':
-				command = 'VXX:LNSI4=+00000';
+				command = 'VXX%3ALNSI4=%2B00000';
 				break;
 			case 'focus-out-coarse':
-				command = 'VXX:LNSI4=+00201';
+				command = 'VXX%3ALNSI4=%2B00201';
 				break;
 			case 'focus-out-fine':
-				command = 'VXX:LNSI4=+00001';
+				command = 'VXX%3ALNSI4=%2B00001';
 				break;
 			case 'freeze-off':
 				command = 'OFZ:0';
@@ -581,16 +589,16 @@ function extronBox (address, port, deviceType, action)
 				command = 'PON';
 				break;
 			case 'zoom-in-coarse':
-				command = 'VXX:LNSI5=+00200';
+				command = 'VXX%3ALNSI5=%2B00200';
 				break;
 			case 'zoom-in-fine':
-				command = 'VXX:LNSI5=+00000';
+				command = 'VXX%3ALNSI5=%2B00000';
 				break;
 			case 'zoom-out-coarse':
-				command = 'VXX:LNSI5=+00201';
+				command = 'VXX%3ALNSI5=%2B00201';
 				break;
 			case 'zoom-out-fine':
-				command = 'VXX:LNSI5=+00001';
+				command = 'VXX%3ALNSI5=%2B00001';
 				break;
 		} // end switch();
 		// Add in Panasonic's funny little
