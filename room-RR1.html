@@ -4,8 +4,9 @@
 	<head>
 		<meta charset="utf-8"> 
 		<title>Room RR1 controls</title>
-		<link rel="stylesheet" type="text/css" href="stylesheet/styles-file.css">
-		<script type="text/javascript" src="javascript/javascript-file.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheet/common_styles-file.css">
+		<script type="text/javascript" src="javascript/common_extron-stuff.js"></script>
+		<script type="text/javascript" src="javascript/projector-vars_wdm.js"></script>
 		<!--
 			Reminder:
 			extronBox(address, port, deviceType, action);
@@ -29,10 +30,10 @@
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons">
-					<a class="common simple green half-width" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, power_on);">Projector ON</a>
+					<a class="common simple green width-80" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, power_on);">Projector ON</a>
 				</td>
 				<td class="table-buttons">
-					<a class="common simple red half-width" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, power_off);">Projector OFF</a>
+					<a class="common simple red width-80" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, power_off);">Projector OFF</a>
 				</td>
 			</tr>
 			<tr>
@@ -49,18 +50,18 @@
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons">
-					<a class="common simple green half-width" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, freeze_off);">Freeze OFF</a>
+					<a class="common simple green width-80" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, freeze_off);">Freeze OFF</a>
 				</td>
 				<td class="table-buttons">
-					<a class="common simple red half-width" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, freeze_on);">Freeze ON</a>
+					<a class="common simple red width-80" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, freeze_on);">Freeze ON</a>
 				</td>
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons">
-					<a class="common simple green half-width" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, blank_off);">Blank OFF</a>
+					<a class="common simple green width-80" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, blank_off);">Blank OFF</a>
 				</td>
 				<td class="table-buttons">
-					<a class="common simple red half-width" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, blank_on);">Blank ON</a>
+					<a class="common simple red width-80" onclick="extronBox(rmRR1, mainCenter, sanyoPLC, blank_on);">Blank ON</a>
 				</td>
 			</tr>
 		</table>
