@@ -75,7 +75,8 @@ function populateVars (address) {
 			well = 'http://10.40.97.229:33130/file.html';
 			break;
 		case 'rm101A':
-			mainCenter = '01';
+			mainCenter = '02';
+			mainScreen = '01';
 			rm101A = 'http://10.40.97.229:33098/file.html';
 			break;
 		case 'rm101B':
@@ -84,7 +85,8 @@ function populateVars (address) {
 			rm101B = 'http://10.40.97.229:33099/file.html';
 			break;
 		case 'rm101C':
-			mainCenter = '01';
+			mainCenter = '02';
+			mainScreen = '01';
 			rm101C = 'http://10.40.97.229:33101/file.html';
 			break;
 		case 'rm128':
