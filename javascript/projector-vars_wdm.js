@@ -89,6 +89,16 @@ function populateVars (address) {
 			mainScreen = '01';
 			rm101C = 'http://10.40.97.229:33101/file.html';
 			break;
+		case 'rm102':
+			mainCenter = '02';
+			mainScreen = '01';
+			rm101C = 'http://10.40.97.229:33102/file.html';
+			break;
+		case 'rm104':
+			mainCenter = '02';
+			mainScreen = '01';
+			rm101C = 'http://10.40.97.229:33104/file.html';
+			break;
 		case 'rm128':
 			mainCenter = '02';
 			mainScreen = '01';
