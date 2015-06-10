@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Test page</title>
+</head>
+
+<body>
+
+
+<script language="javascript">
+var WACIip = "10.40.97.216";
+var RPCurl = "http://"+WACIip+"/RPC";
+
+var xmlhttp = null;/*
+try {
+	xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+} catch (e) {
+	try {
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	} catch (e) {
+*/		try {
+			xmlhttp = new XMLHttpRequest();
+		} catch (e) {
+			xmlhttp = false;
+		}
+/*	}
+}*/
+
+if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+	xmlhttp = new XMLHttpRequest();
+}
+
+function getResponse() {
+	if (xmlhttp.readyState == 4) {
+		//alert(xmlhttp.response); // <-- sample to show return data, parse 'xmlhttp.response' to get necessary data
+		alert(xmlhttp.responseText);
+		//alert(xmlhttp.response.length);
+	}
+}
+
+function rpc(method, params) {
+	// method: any valid WACI RPC method
+	// params: parameters, in URL encoded name value pairs (e.g., 'param1=a&param2=b&param3=c')
+	xmlhttp.open("POST",RPCurl,false);
+	var theString = "method=" + method + "&" + params;
+	xmlhttp.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded");
+	xmlhttp.onreadystatechange = getResponse;
+	xmlhttp.send(theString);
+}
+</script>
+
+<a href="javascript:rpc('GetVariableValueByName', 'param1=var1')">Read Variable 'var1'</a>
+
+<a href="javascript:rpc('Relay_Toggle', 'param1=1')">Relay 1 Toggle</a>
+<br><br>
+<!--
+
+
+<br><br><br><br>
+
+<a href="javascript:TriggerEventByName('test', '0', '0', '0')">Run 'test' event</a><br><br>
+
+<a href="javascript:relayToggle('Relay_On', '1')">r1 on</a><br><br>
+
+<a href="javascript:relayToggle('Relay_Off', '1')">r1 off</a><br><br>
+
+<a href="javascript:serialSend(1, 'SOME DATA', 200)">Send data through Serial 1</a><br><br>
+
+<a href="javascript:IRSend(1, 'VCR', 'POWER')">Send VCR Power Command</a><br><br>
+//-->
+
+</body>
+
+</html>

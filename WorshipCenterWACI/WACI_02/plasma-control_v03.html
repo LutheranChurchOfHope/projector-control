@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<title>
+			Master page
+		</title>
+		
+		
+		<style type="text/css">
+		
+		.buttons
+		{
+			border-collapse: collapse;
+			border: 1px solid black;
+		}
+		
+		</style>
+		
+		
+		
+		<script type="text/javascript">
+			//Set your WACI IP or Hostname Here *****************************
+			var WACI1ip = "10.40.97.213";
+			var WACI2ip = "10.40.97.214";
+			var WACI3ip = "10.40.97.215";
+			var WACI4ip = "10.40.97.216";
+
+/*
+			var WACI1ip = "10.40.97.229:33081";
+			var WACI2ip = "10.40.97.229:33082";
+			var WACI3ip = "10.40.97.229:33083";
+			var WACI4ip = "10.40.97.229:33084";
+*/
+
+			///////////////////////////////////////////////
+			//
+			// To Send Serial Commands make a link to: "javascript:serialSend(port, command, timeout)"
+			// To Trigger an Event make a link to: "javascript:TriggerEventByName('eventname', '0', '0', '0')"
+			//
+			///////////////////////////////////////////////
+			
+			var RPCurlWACI1 = "http://"+WACI1ip+"/RPC";
+			var RPCurlWACI2 = "http://"+WACI2ip+"/RPC";
+			var RPCurlWACI3 = "http://"+WACI3ip+"/RPC";
+			var RPCurlWACI4 = "http://"+WACI4ip+"/RPC";
+			
+			var xmlhttp = null;
+			try
+				{
+					xmlhttp = new XMLHttpRequest();
+				}
+
+			catch (e)
+				{
+					xmlhttp = false;
+				}
+
+			if (!xmlhttp && typeof XMLHttpRequest!='undefined')
+				{
+					xmlhttp = new XMLHttpRequest();
+				}
+
+			function getResponse()
+				{
+					if (xmlhttp.readyState == 4)
+						{
+							alert(xmlhttp.readyState);
+						}
+				}
+			
+			
+			// start WACI1
+			function serialWACI1Send(param1, param2, param3)
+				{
+				
+					// Param 1: Port
+					// Param 2: Serial String
+					// Param 3: Timeout
+										
+					xmlhttp.open("POST",RPCurlWACI1,false);
+					var theString = "method=Serial_Send&Param1=" + param1 + "&Param2=" + param2 + "&Param3=" + param3;
+					xmlhttp.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded");
+					xmlhttp.send(theString);
+				}
+				
+			function TriggerWACI1EventByName(param1, param2, param3, param4)
+				{
+					
+					// Param 1: Name of event to trigger
+					
+					xmlhttp.open("POST",RPCurlWACI1,false);
+					var theString = "method=TriggerEventByName&Param1=" + param1 + "&Param2=" + param2 + "&Param3=" + "&Param4=" + param4;
+					xmlhttp.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded");
+					xmlhttp.send(theString);
+				}
+			// end WACI1
+			
+			// start WACI2
+			function serialWACI2Send(param1, param2, param3)
+				{
+			
+					// Param 1: Port
+					// Param 2: Serial String
+					// Param 3: Timeout
+				
+					xmlhttp.open("POST",RPCurlWACI2,false);
+					var theString = "method=Serial_Send&Param1=" + param1 + "&Param2=" + param2 + "&Param3=" + param3;
+					xmlhttp.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded");
+					xmlhttp.send(theString);
+				}
+			
+			function TriggerWACI2EventByName(param1, param2, param3, param4) {
+			
+					// Param 1: Name of event to trigger
+					
+					xmlhttp.open("POST",RPCurlWACI2,false);
+					var theString = "method=TriggerEventByName&Param1=" + param1 + "&Param2=" + param2 + "&Param3=" + "&Param4=" + param4;
+					xmlhttp.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded");
+					xmlhttp.send(theString);
+				}
+			// end WACI2
+				
+			// start WACI3
+			function serialWACI3Send(param1, param2, param3) {
+			
+					// Param 1: Port
+					// Param 2: Serial String
+					// Param 3: Timeout
+					
+					xmlhttp.open("POST",RPCurlWACI3,false);
+					var theString = "method=Serial_Send&Param1=" + param1 + "&Param2=" + param2 + "&Param3=" + param3;
+					xmlhttp.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded");
+					xmlhttp.send(theString);
+				}
+				
+			function TriggerWACI3EventByName(param1, param2, param3, param4) {
+			
+					// Param 1: Name of event to trigger
+				
+					xmlhttp.open("POST",RPCurlWACI3,false);
+					var theString = "method=TriggerEventByName&Param1=" + param1 + "&Param2=" + param2 + "&Param3=" + "&Param4=" + param4;
+					xmlhttp.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded");
+					xmlhttp.send(theString);
+				}
+			// end WACI3
+			
+			// start WACI4			
+			function serialWACI4Send(param1, param2, param3) {
+			
+					// Param 1: Port
+					// Param 2: Serial String
+					// Param 3: Timeout
+					
+					xmlhttp.open("POST",RPCurlWACI4,false);
+					var theString = "method=Serial_Send&Param1=" + param1 + "&Param2=" + param2 + "&Param3=" + param3;
+					xmlhttp.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded");
+					xmlhttp.send(theString);
+				}
+			
+			function TriggerWACI4EventByName(param1, param2, param3, param4) {
+			
+					// Param 1: Name of event to trigger
+				
+					xmlhttp.open("POST",RPCurlWACI4,false);
+					var theString = "method=TriggerEventByName&Param1=" + param1 + "&Param2=" + param2 + "&Param3=" + "&Param4=" + param4;
+					xmlhttp.setRequestHeader ("Content-Type", "application/x-www-form-urlencoded");
+					xmlhttp.send(theString);
+				}
+			// end WACI4
+			
+			
+			// end demo stuff
+			
+			// start custom stuff
+			
+
+			function plasmaFBinputA()
+				{
+					javascript:TriggerWACI2EventByName('plasma9input6', '0', '0', '0')
+				}
+
+			function plasmaFBinputB()
+				{
+					javascript:TriggerWACI2EventByName('plasma9input7', '0', '0', '0')
+				}
+
+
+			
+			// start Plasma ON
+
+			// VC plasma displays
+			function plasmaVC1On()
+				{
+					javascript:TriggerWACI2EventByName('plasma1on', '0', '0', '0')
+				}
+			
+			function plasmaVC2On()
+				{
+					javascript:TriggerWACI2EventByName('plasma2on', '0', '0', '0')
+				}
+			
+			function plasmaVC3On()
+				{
+					javascript:TriggerWACI3EventByName('plasma3on', '0', '0', '0')
+				}
+			
+			function plasmaVC4On()
+				{
+					javascript:TriggerWACI3EventByName('plasma4on', '0', '0', '0')
+				}
+			
+			function plasmaVC5On() // Plasma VC 5 is "plasma6".
+				{
+					javascript:TriggerWACI3EventByName('plasma6on', '0', '0', '0')
+				}
+			
+			function plasmaVC6On() // Plasma VC 6 is "plasma7".
+				{
+					javascript:TriggerWACI3EventByName('plasma7on', '0', '0', '0')
+				}
+			
+			// other plasma displays
+			function plasmaGSOn() // Gathering Space plasmas
+				{
+					javascript:TriggerWACI4EventByName('plasma5on', '0', '0', '0')
+				}
+			
+			function plasmaENTRYOn() // Entry displays
+				{
+					javascript:TriggerWACI4EventByName('plasma8on', '0', '0', '0')
+				}
+			
+			function plasmaFBOn() // Plasma 9 is the Football plasma
+				{
+					javascript:TriggerWACI3EventByName('plasma9on', '0', '0', '0')
+				}
+			
+			function plasma10On()
+				{
+					javascript:TriggerWACI2EventByName('plasma10on', '0', '0', '0')
+				}
+			
+			/*
+			function plasma20On()
+				{
+					javascript:TriggerWACI4EventByName('plasma20on', '0', '0', '0')
+				}
+			*/
+
+			// end Plasma ON
+
+
+			// start Plasma OFF
+
+			// VC plasma displays
+			function plasmaVC1Off()
+				{
+					javascript:TriggerWACI2EventByName('plasma1off', '0', '0', '0')
+				}
+			
+			function plasmaVC2Off()
+				{
+					javascript:TriggerWACI2EventByName('plasma2off', '0', '0', '0')
+				}
+			
+			function plasmaVC3Off()
+				{
+					javascript:TriggerWACI3EventByName('plasma3off', '0', '0', '0')
+				}
+			
+			function plasmaVC4Off()
+				{
+					javascript:TriggerWACI3EventByName('plasma4off', '0', '0', '0')
+				}
+			
+			function plasmaVC5Off() // Plasma VC 5 is "plasma6".
+				{
+					javascript:TriggerWACI3EventByName('plasma6off', '0', '0', '0')
+				}
+			
+			function plasmaVC6Off() // Plasma VC 6 is "plasma7".
+				{
+					javascript:TriggerWACI3EventByName('plasma7off', '0', '0', '0')
+				}
+			
+			// other plasma displays
+			function plasmaGSOff() // Gathering Space plasmas
+				{
+					javascript:TriggerWACI4EventByName('plasma5off', '0', '0', '0')
+				}
+			
+			function plasmaENTRYOff() // Entry displays
+				{
+					javascript:TriggerWACI4EventByName('plasma8off', '0', '0', '0')
+				}
+			
+			function plasmaFBOff() // Plasma 9 is the Football plasma
+				{
+					javascript:TriggerWACI3EventByName('plasma9off', '0', '0', '0')
+				}
+			
+			function plasma10Off()
+				{
+					javascript:TriggerWACI2EventByName('plasma10off', '0', '0', '0')
+				}
+			
+			/*
+			function plasma20Off()
+				{
+					javascript:TriggerWACI4EventByName('plasma20off', '0', '0', '0')
+				}
+			*/
+
+			// end Plasma OFF
+
+
+
+		</script>
+	</head>
+	
+	
+	<body>
+	
+		<div>
+			<table class="buttons">
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaVC1On();">VC Plasma 1 ON</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaVC1Off();">VC Plasma 1 OFF</a>
+					</td>
+				</tr>
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaVC2On();">VC Plasma 2 ON</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaVC2Off();">VC Plasma 2 OFF</a>
+					</td>
+				</tr>
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaVC3On();">VC Plasma 3 ON</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaVC3Off();">VC Plasma 3 OFF</a>
+					</td>
+				</tr>
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaVC4On();">VC Plasma 4 ON</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaVC4Off();">VC Plasma 4 OFF</a>
+					</td>
+				</tr>
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaVC5On();">VC Plasma 5 ON</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaVC5Off();">VC Plasma 5 OFF</a>
+					</td>
+				</tr>
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaVC6On();">VC Plasma 6 ON</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaVC6Off();">VC Plasma 6 OFF</a>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table class="buttons">
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaGSOn();">GS displays ON</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaGSOff();">GS displays OFF</a>
+					</td>
+				</tr>
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaENTRYOn();">Entry displays ON</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaENTRYOff();">Entry displays OFF</a>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table class="buttons">
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaFBOn();">FB display ON</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaFBOff();">FB display OFF</a>
+					</td>
+				</tr>
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaFBinputA();">FB input A</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaFBinputB();">FB input B</a>
+					</td>
+				</tr>
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaVC6On();">VC Plasma 6 ON</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaVC6Off();">VC Plasma 6 OFF</a>
+					</td>
+				</tr>
+				<tr class="buttons">
+					<td class="buttons">
+						<a onclick="plasmaVC6On();">VC Plasma 6 ON</a>
+					</td>
+					<td class="buttons">
+						<a onclick="plasmaVC6Off();">VC Plasma 6 OFF</a>
+					</td>
+				</tr>
+			</table>
+
+<!--
+			<a onclick=""></a>
+			<a onclick=""></a>
+			<a onclick=""></a>
+			<a onclick=""></a>
+			<a onclick=""></a>
+//-->
+		</div>
+	
+	</body>
+	
+	
+</html>
