@@ -851,6 +851,10 @@ function projCHRon()
 	{
 		projector6On();
 	}
+	function proj8on()
+	{
+		projector8On();
+	}
 
 
 function projector1On()
@@ -887,6 +891,11 @@ function projector7On()
 	{
 		javascript:TriggerWACI4EventByName('proj7on', '0', '0', '0');
 	}
+	
+	function projector8On()
+	{
+		javascript:TriggerWACI2EventByName('proj8on', '0', '0', '0');
+	}
 
 /* end Projector ON */
 
@@ -921,6 +930,12 @@ function projCHRoff()
 	{
 		projector6Off();
 	}
+	
+function proj8off()
+	{
+		projector8Off();
+	}
+
 
 
 function projector1Off()
@@ -956,6 +971,11 @@ function projector6Off()
 function projector7Off()
 	{
 		javascript:TriggerWACI4EventByName('proj7off', '0', '0', '0');
+	}
+	
+	function projector8Off()
+	{
+		javascript:TriggerWACI2EventByName('proj8off', '0', '0', '0');
 	}
 
 
@@ -1013,6 +1033,7 @@ function allPlasmasOFF()
 		window.setTimeout("projector5On();",1000);
 		window.setTimeout("projector6On();",1000);
 		window.setTimeout("projector7On();",1000);	
+		window.setTimeout("projector8On();",1000);	
 	}
 
 	function projectorsOFF()
@@ -1024,6 +1045,7 @@ function allPlasmasOFF()
 		window.setTimeout("projector5Off();",1000);
 		window.setTimeout("projector6Off();",1000);
 		window.setTimeout("projector7Off();",1000);	
+		window.setTimeout("projector8Off();",1000);	
 	}
 
 
@@ -1040,6 +1062,7 @@ function masterWCOn()
 				window.setTimeout("projector5On();",1000);
 				window.setTimeout("projector6On();",1000);
 				window.setTimeout("projector7On();",1000);
+				window.setTimeout("projector8On();",1000);
 				window.setTimeout("plasmaVC1On();",1000);
 				window.setTimeout("plasmaVC2On();",1000);
 				window.setTimeout("plasmaVC3On();",1000);
@@ -1058,6 +1081,7 @@ function masterWCOn()
 				window.setTimeout("projector5On();",1000);
 				window.setTimeout("projector6On();",1000);
 				window.setTimeout("projector7On();",1000);
+				window.setTimeout("projector8On();",1000);
 				window.setTimeout("plasmaVC1On();",1000);
 				window.setTimeout("plasmaVC2On();",1000);
 				window.setTimeout("plasmaVC3On();",1000);
@@ -1078,6 +1102,7 @@ function masterWCOff()
 		window.setTimeout("projector5Off();",1000);
 		window.setTimeout("projector6Off();",1000);
 		window.setTimeout("projector7Off();",1000);
+		window.setTimeout("projector8Off();",1000);
 		window.setTimeout("plasmaVC1Off();",1000);
 		window.setTimeout("plasmaVC2Off();",1000);
 		window.setTimeout("plasmaVC3Off();",1000);
