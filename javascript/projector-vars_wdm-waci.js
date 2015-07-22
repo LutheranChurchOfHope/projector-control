@@ -8,22 +8,25 @@ var wc = 'wc';
 
 // get all our variables ready:
 
+var bookstoreTV;
+var centerBeam1;
 var centerCenter;
 var centerLeft;
 var centerRight;
 var entryPlasmas;
 var foldbackLeft;
 var foldbackRight;
+var footballTV;
 var gsPlasmas;
 var mainLeft;
 var mainRight;
+var prayerTVs;
 var vcPlasma01;
 var vcPlasma02;
 var vcPlasma03;
 var vcPlasma04;
 var vcPlasma05;
 var vcPlasma06;
-
 
 
 
@@ -44,15 +47,19 @@ function populateVars (address) {
 	switch (address)
 	{
 		case 'wc':
+			bookstoreTV = 'bookstoreTV';
+			centerBeam1 = 'centerBeam1';
 			centerCenter = 'centerCenter';
 			centerLeft = 'centerLeft';
 			centerRight = 'centerRight';
 			entryPlasmas = 'entryPlasmas';
 			foldbackLeft = 'foldbackLeft';
 			foldbackRight = 'foldbackRight';
+			footballTV = 'footballTV';
 			gsPlasmas = 'gsPlasmas';
 			mainLeft = 'mainLeft';
 			mainRight = 'mainRight';
+			prayerTVs = 'prayerTVs';
 			vcPlasma01 = 'vcPlasma01';
 			vcPlasma02 = 'vcPlasma02';
 			vcPlasma03 = 'vcPlasma03';
