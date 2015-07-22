@@ -41,6 +41,17 @@ function rpc(method, params)
 
 /* specific functions */
 
+
+
+/*
+
+
+START PROJECTOR STATUS CODE
+
+
+*/
+
+
 function modifyString(string)
 	{
 		var str=string; 
@@ -500,7 +511,13 @@ function proj7temp()
 	}
 // end Proj7
 
+/*
 
+
+END PROJECTOR STATUS CODE
+
+
+*/
 function goBack()
 	{
 		window.history.back();
