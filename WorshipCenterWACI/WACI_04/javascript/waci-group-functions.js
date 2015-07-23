@@ -47,6 +47,7 @@ function allPlasmasOFF()
 
 function projectorsON()
 {
+	window.setTimeout("waciBox(wc, centerBeam1, nope, power_on);",1000);	
 	window.setTimeout("waciBox(wc, centerCenter, nope, power_on);",1000);
 	window.setTimeout("waciBox(wc, centerLeft, nope, power_on);",1000);
 	window.setTimeout("waciBox(wc, centerRight, nope, power_on);",1000);
@@ -54,11 +55,11 @@ function projectorsON()
 	window.setTimeout("waciBox(wc, mainRight, nope, power_on);",1000);
 	window.setTimeout("waciBox(wc, foldbackLeft, nope, power_on);",1000);
 	window.setTimeout("waciBox(wc, foldbackRight, nope, power_on);",1000);	
-	window.setTimeout("waciBox(wc, ***PROJECTOR8***, nope, power_on);",1000);	
 }
 
 function projectorsOFF()
 {
+	window.setTimeout("waciBox(wc, centerBeam1, nope, power_off);",1000);	
 	window.setTimeout("waciBox(wc, centerCenter, nope, power_off);",1000);
 	window.setTimeout("waciBox(wc, centerLeft, nope, power_off);",1000);
 	window.setTimeout("waciBox(wc, centerRight, nope, power_off);",1000);
@@ -66,7 +67,6 @@ function projectorsOFF()
 	window.setTimeout("waciBox(wc, mainRight, nope, power_off);",1000);
 	window.setTimeout("waciBox(wc, foldbackLeft, nope, power_off);",1000);
 	window.setTimeout("waciBox(wc, foldbackRight, nope, power_off);",1000);	
-	window.setTimeout("waciBox(wc, ***PROJECTOR8***, nope, power_off);",1000);	
 }
 
 
@@ -90,8 +90,8 @@ function masterWCOn()
 
 function masterWCOff()
 {
-		window.setTimeout("projectorsON();",1000);
-		window.setTimeout("vcPlasmasON();",1000);
+		window.setTimeout("projectorsOFF();",1000);
+		window.setTimeout("vcPlasmasOFF();",1000);
 		window.setTimeout("waciBox(wc, footballTV, nope, power_off);",1000);
 		window.setTimeout("waciBox(wc, prayerTVs, nope, power_off);",1000);  
 }
