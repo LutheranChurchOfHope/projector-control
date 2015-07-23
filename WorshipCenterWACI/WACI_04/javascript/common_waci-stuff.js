@@ -529,7 +529,7 @@ function waciBox (address, port, deviceType, action)
 			case 'bookstoreTV':
 				projNum = '20';
 				waciNum = '4';
-				devType = 'Plasma';
+				devType = 'plasma';
 				break;
 			case 'centerBeam1':
 				projNum = '8';
@@ -554,7 +554,7 @@ function waciBox (address, port, deviceType, action)
 			case 'entryPlasmas':
 				projNum = '8';
 				waciNum = '4';
-				devType = 'Plasma';
+				devType = 'plasma';
 				break;
 			case 'foldbackLeft':
 				projNum = '3';
@@ -569,12 +569,12 @@ function waciBox (address, port, deviceType, action)
 			case 'footballTV':
 				projNum = '9';
 				waciNum = '3';
-				devType = 'Plasma';
+				devType = 'plasma';
 				break;
 			case 'gsPlasmas':
 				projNum = '5';
 				waciNum = '4';
-				devType = 'Plasma';
+				devType = 'plasma';
 				break;
 			case 'mainLeft':
 				projNum = '1';
@@ -589,37 +589,37 @@ function waciBox (address, port, deviceType, action)
 			case 'prayerTVs':
 				projNum = '12';
 				waciNum = '4';
-				devType = 'Plasma';
+				devType = 'plasma';
 				break;
 			case 'vcPlasma01':
 				projNum = '1';
 				waciNum = '2';
-				devType = 'Plasma';
+				devType = 'plasma';
 				break;
 			case 'vcPlasma02':
 				projNum = '2';
 				waciNum = '2';
-				devType = 'Plasma';
+				devType = 'plasma';
 				break;
 			case 'vcPlasma03':
 				projNum = '3';
-				waciNum = '2';
-				devType = 'Plasma';
+				waciNum = '3';
+				devType = 'plasma';
 				break;
 			case 'vcPlasma04':
 				projNum = '4';
 				waciNum = '3';
-				devType = 'Plasma';
+				devType = 'plasma';
 				break;
 			case 'vcPlasma05':
 				projNum = '6';
 				waciNum = '3';
-				devType = 'Plasma';
+				devType = 'plasma';
 				break;
 			case 'vcPlasma06':
 				projNum = '7';
 				waciNum = '3';
-				devType = 'Plasma';
+				devType = 'plasma';
 				break;
 		}
 
