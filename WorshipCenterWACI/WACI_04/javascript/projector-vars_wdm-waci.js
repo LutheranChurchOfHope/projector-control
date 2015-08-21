@@ -8,7 +8,10 @@ var wc = 'wc';
 
 // get all our variables ready:
 
-var bookstoreTV;
+var bookstoreTV_0;
+var bookstoreTV_1;
+var bookstoreTV_2;
+var bookstoreTV_3;
 var centerBeam1;
 var centerCenter;
 var centerLeft;
@@ -47,7 +50,10 @@ function populateVars (address) {
 	switch (address)
 	{
 		case 'wc':
-			bookstoreTV = 'bookstoreTV';
+			bookstoreTV_0 = 'bookstoreTV-0';
+			bookstoreTV_1 = 'bookstoreTV-1';
+			bookstoreTV_2 = 'bookstoreTV-2';
+			bookstoreTV_3 = 'bookstoreTV-3';
 			centerBeam1 = 'centerBeam1';
 			centerCenter = 'centerCenter';
 			centerLeft = 'centerLeft';

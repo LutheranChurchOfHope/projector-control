@@ -5,6 +5,36 @@
 
 
 
+function cafeTVsON()
+{
+	window.setTimeout("waciBox(wc, bookstoreTV_0, nope, power_on);",1000);
+	window.setTimeout("waciBox(wc, bookstoreTV_1, nope, power_on);",1000);
+	window.setTimeout("waciBox(wc, bookstoreTV_2, nope, power_on);",1000);
+	window.setTimeout("waciBox(wc, bookstoreTV_3, nope, power_on);",1000);
+}
+
+function cafeTVsOFF()
+{
+	window.setTimeout("waciBox(wc, bookstoreTV_0, nope, power_off);",1000);
+	window.setTimeout("waciBox(wc, bookstoreTV_1, nope, power_off);",1000);
+	window.setTimeout("waciBox(wc, bookstoreTV_2, nope, power_off);",1000);
+	window.setTimeout("waciBox(wc, bookstoreTV_3, nope, power_off);",1000);
+}
+
+function cafeTrifectaON()
+{
+	window.setTimeout("waciBox(wc, bookstoreTV_1, nope, power_on);",1000);
+	window.setTimeout("waciBox(wc, bookstoreTV_2, nope, power_on);",1000);
+	window.setTimeout("waciBox(wc, bookstoreTV_3, nope, power_on);",1000);
+}
+
+function cafeTrifectaOFF()
+{
+	window.setTimeout("waciBox(wc, bookstoreTV_1, nope, power_off);",1000);
+	window.setTimeout("waciBox(wc, bookstoreTV_2, nope, power_off);",1000);
+	window.setTimeout("waciBox(wc, bookstoreTV_3, nope, power_off);",1000);
+}
+
 function vcPlasmasON()
 {
 	window.setTimeout("waciBox(wc, vcPlasma01, nope, power_on);",1000);
