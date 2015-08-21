@@ -526,9 +526,24 @@ function waciBox (address, port, deviceType, action)
 		
 		switch (port)
 		{
-			case 'bookstoreTV':
+			case 'bookstoreTV-0':
 				projNum = '20';
 				waciNum = '4';
+				devType = 'plasma';
+				break;
+			case 'bookstoreTV-1':
+				projNum = '21';
+				waciNum = '1';
+				devType = 'plasma';
+				break;
+			case 'bookstoreTV-2':
+				projNum = '22';
+				waciNum = '1';
+				devType = 'plasma';
+				break;
+			case 'bookstoreTV-3':
+				projNum = '23';
+				waciNum = '1';
 				devType = 'plasma';
 				break;
 			case 'centerBeam1':
