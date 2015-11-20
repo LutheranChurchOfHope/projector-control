@@ -16,10 +16,10 @@ if (!xmlhttp && typeof XMLHttpRequest!='undefined')
 	}
 
 
-var WACI1ip = "10.40.97.229:33081";
-var WACI2ip = "10.40.97.229:33082";
-var WACI3ip = "10.40.97.229:33083";
-var WACI4ip = "10.40.97.229:33084";
+var WACI1ip = "10.40.30.81";
+var WACI2ip = "10.40.30.82";
+var WACI3ip = "10.40.30.83";
+var WACI4ip = "10.40.30.84";
 
 ///////////////////////////////////////////////
 //

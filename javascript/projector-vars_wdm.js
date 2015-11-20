@@ -58,70 +58,70 @@ function populateVars (address) {
 			mainCenter = '03';
 			mainLeft = '01';
 			mainRight = '02';
-			bridge = 'http://10.40.97.229:33075/file.html';
+			bridge = 'http://10.40.30.75/file.html';
 			break;
 		case 'chapel':
 			foldbackSide = '03';
 			mainCenter = '02';
 			mainSide = '01';
-			chapel = 'http://10.40.97.229:33070/file.html';
+			chapel = 'http://10.40.30.70/file.html';
 			break;
 		case 'gym':
 			mainSide = '01';
-			gym = 'http://10.40.97.229:33065/file.html';
+			gym = 'http://10.40.30.65/file.html';
 			break;
 		case 'well':
 			mainCenter = '01';
-			well = 'http://10.40.97.229:33130/file.html';
+			well = 'http://10.40.30.130/file.html';
 			break;
 		case 'rm101A':
 			mainCenter = '02';
 			mainScreen = '01';
-			rm101A = 'http://10.40.97.229:33098/file.html';
+			rm101A = 'http://10.40.30.98/file.html';
 			break;
 		case 'rm101B':
 			mainCenter = '02';
 			mainScreen = '01';
-			rm101B = 'http://10.40.97.229:33099/file.html';
+			rm101B = 'http://10.40.30.99/file.html';
 			break;
 		case 'rm101C':
 			mainCenter = '02';
 			mainScreen = '01';
-			rm101C = 'http://10.40.97.229:33101/file.html';
+			rm101C = 'http://10.40.30.101/file.html';
 			break;
 		case 'rm102':
 			mainCenter = '02';
 			mainScreen = '01';
-			rm101C = 'http://10.40.97.229:33102/file.html';
+			rm101C = 'http://10.40.30.102/file.html';
 			break;
 		case 'rm104':
 			mainCenter = '02';
 			mainScreen = '01';
-			rm101C = 'http://10.40.97.229:33104/file.html';
+			rm101C = 'http://10.40.30.104/file.html';
 			break;
 		case 'rm128':
 			mainCenter = '02';
 			mainScreen = '01';
-			rm128 = 'http://10.40.97.229:33128/file.html';
+			rm128 = 'http://10.40.30.128/file.html';
 			break;
 		case 'rm212':
 			mainCenter = '02';
 			mainScreen = '01';
-			rm212 = 'http://10.40.97.229:33212/file.html';
+			rm212 = 'http://10.40.30.212/file.html';
 			break;
 		case 'rm214':
 			mainCenter = '02';
 			mainScreen = '01';
-			rm214 = 'http://10.40.97.229:33214/file.html';
+			rm214 = 'http://10.40.30.214/file.html';
 			break;
 		case 'rm216':
 			mainCenter = '02';
 			mainScreen = '01';
-			rm216 = 'http://10.40.97.229:33216/file.html';
+			rm216 = 'http://10.40.30.216/file.html';
 			break;
 		case 'rmRR1':
 			mainCenter = '01';
-			rmRR1 = 'http://10.40.97.229:33060/file.html';
+			rmRR1 = 'http://10.40.30.60/file.html';
 			break;
 	}
 }
