@@ -64,6 +64,7 @@ Done!
 
 var panasonicPJLink = 'panasonicPJLink';
 var sanyoPLC = 'sanyoPLC';
+var lgTV = 'lgTV';
 var auto_adjust = 'auto-adjust';
 var blank_off = 'blank-off';
 var blank_on = 'blank-on';
@@ -108,6 +109,7 @@ var power_off = 'power-off';
 var power_on = 'power-on';
 var screen_down = 'screen-down';
 var screen_up = 'screen-up';
+var stupid_sync = 'stupid-sync';
 var zoom_in = 'zoom-in';
 var zoom_in_coarse = 'zoom-in-coarse';
 var zoom_in_fine = 'zoom-in-fine';
@@ -183,6 +185,7 @@ actions that are supported on at least one device:
 	power-on
 	screen-down
 	screen-up
+	stupid-sync
 	zoom-in
 	zoom-in-coarse
 	zoom-in-fine
@@ -202,6 +205,7 @@ The following devices are supported by deviceType:
 	panasonicPJLink
 	sanyoPLC
 	sharpTV
+	lgTV
 
 
 
@@ -526,6 +530,33 @@ function extronBox (address, port, deviceType, action)
 		}
 		
 		// Add in Sharp's funny little end byte:
+		command = command + '%0D';
+	} // end if(); for device
+
+	if (deviceType == 'lgTV')
+	{
+		
+		var urlStart = urlStart + 'RS|';
+		
+		/*
+			This switch block takes the action you want
+			to execute, and turns it into the
+			the corresponding serial command.
+		*/
+		switch (action)
+		{
+			case 'power-off':
+				command = 'ka%20%30%20%30';
+				break;
+			case 'power-on':
+				command = 'ka%20%30%20%31';
+				break;
+			case 'stupid-sync':
+				command = '';
+				break;
+		}
+		
+		// Add in LG's funny little end byte:
 		command = command + '%0D';
 	} // end if(); for device
 	

@@ -26,11 +26,15 @@ var foldbackCenter;
 var foldbackLeft;
 var foldbackRight;
 var foldbackSide;
+var foldbackTV;
 var mainCenter;
 var mainLeft;
 var mainRight;
 var mainScreen;
 var mainSide;
+var mainOne;
+var mainTwo;
+var mainThree;
 
 
 
@@ -72,6 +76,10 @@ function populateVars (address) {
 			break;
 		case 'well':
 			mainCenter = '01';
+			mainOne = '03';
+			mainTwo = '04';
+			mainThree = '05';
+			foldbackTV = '06';
 			well = 'http://10.40.30.130/file.html';
 			break;
 		case 'rm101A':

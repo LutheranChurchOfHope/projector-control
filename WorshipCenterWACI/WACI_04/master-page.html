@@ -12,8 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="common_styles-file.css">		
 		
 		<script src="javascript/common_waci-stuff.js"></script>
-		<script src="javascript/javascript-file.js"></script>
 		<script src="javascript/projector-vars_wdm-waci.js"></script>
+		<script src="javascript/waci-group-functions.js"></script>
 		
 	</head>
 	
@@ -44,18 +44,18 @@
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons">
-					<a class="common simple green width-80" onclick="plasmaFBOn();">FB display ON</a>
+					<a class="common simple green width-80" onclick="waciBox(wc, footballTV, nope, power_on);">FB display ON</a>
 				</td>
 				<td class="table-buttons">
-					<a class="common simple red width-80" onclick="plasmaFBOff();">FB display OFF</a>
+					<a class="common simple red width-80" onclick="waciBox(wc, footballTV, nope, power_off);">FB display OFF</a>
 				</td>
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons">
-					<a class="common simple blue width-80" onclick="plasmaFBinputA();">FB input A &lpar;CG-1&rpar;</a>
+					<a class="common simple blue width-80" onclick="waciBox(wc, footballTV, nope, input_6);">FB input A &lpar;CG-1&rpar;</a>
 				</td>
 				<td class="table-buttons">
-					<a class="common simple blue width-80" onclick="plasmaFBinputB();">FB input B &lpar;CG-2&rpar;</a>
+					<a class="common simple blue width-80" onclick="waciBox(wc, footballTV, nope, input_7);">FB input B &lpar;CG-2&rpar;</a>
 				</td>
 			</tr>
 			<tr class="table-buttons">
@@ -80,7 +80,7 @@
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons">
-					<a class="common simple blue width-80" onclick="foldbackAutoPC();">Foldaback AutoPC</a>
+					<a class="common simple blue width-80" onclick="foldbackAutoPC();">Foldback AutoPC</a>
 				</td>
 				<td class="table-buttons">
 					<a class="common simple blue width-80" onclick="plasmaRossVGA();">[not implemented]</a>
@@ -94,22 +94,22 @@
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons" colspan="2">
-					<a class="common simple yellow full-width" href="plasma-control.html">Plasma display control</a>
+					<a class="common simple yellow width-90" href="plasma-control.html">Plasma display control</a>
 				</td>
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons" colspan="2">
-					<a class="common simple yellow full-width" href="projector-status.html">Projector status</a>
+					<a class="common simple yellow width-90" href="projector-status.html">Projector status</a>
 				</td>
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons" colspan="2">
-					<a class="common simple yellow full-width" href="projector-control.html">Basic projector control</a>
+					<a class="common simple yellow width-90" href="projector-control.html">Basic projector control</a>
 				</td>
 			</tr>
 			<tr class="table-buttons">
 				<td class="table-buttons" colspan="2">
-					<a class="common simple yellow full-width" href="remote/remote_main.html">Advanced projector control</a>
+					<a class="common simple yellow width-90" href="remote/remote_main.html">Advanced projector control</a>
 				</td>
 			</tr>
 		</table>

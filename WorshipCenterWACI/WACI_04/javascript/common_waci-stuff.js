@@ -229,6 +229,8 @@ var image1_recall = 'image1-recall';
 var image2_recall = 'image2-recall';
 var image3_recall = 'image3-recall';
 var image4_recall = 'image4-recall';
+var input_6 = 'input-6';
+var input_7 = 'input-7';
 var input_BNC = 'input-BNC';
 var input_DVI = 'input-DVI';
 var input_HDMI = 'input-HDMI';
@@ -298,6 +300,8 @@ actions that are supported on at least one device:
 	input-HDMI
 	input-SVid
 	input-VGA
+	input-6
+	input-7
 	keystone-down
 	keystone-left
 	keystone-right
@@ -447,6 +451,12 @@ function waciBox (address, port, deviceType, action)
 				break;
 			case 'input-4':
 				command = 'input_4';
+				break;
+			case 'input-6':
+				command = 'input6';
+				break;
+			case 'input-7':
+				command = 'input7';
 				break;
 /*
 			case 'keystone-down':

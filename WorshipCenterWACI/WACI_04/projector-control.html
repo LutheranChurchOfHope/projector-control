@@ -10,7 +10,9 @@
 		
 		<link rel="stylesheet" type="text/css" href="common_styles-file.css">		
 		
-		<script src="javascript-file.js"></script>
+		<script src="javascript/common_waci-stuff.js"></script>
+		<script src="javascript/projector-vars_wdm-waci.js"></script>
+		<script src="javascript/waci-group-functions.js"></script>
 
 	</head>
 	
@@ -38,66 +40,66 @@
 				</tr>
 				<tr class="table-buttons">
 					<td class="table-buttons">
-						<a class="common simple green width-80" onclick="projHLon();">Main House-Left ON<br></a>
+						<a class="common simple green width-80" onclick="waciBox(wc, mainLeft, nope, power_on);">Main House-Left ON<br></a>
 					</td>
 					<td class="table-buttons">
-						<a class="common simple red width-80" onclick="projHLoff();">Main House-Left OFF<br></a>
-					</td>
-				</tr>
-				<tr class="table-buttons">
-					<td class="table-buttons">
-						<a class="common simple green width-80" onclick="projHRon();">Main House-Right ON<br></a>
-					</td>
-					<td class="table-buttons">
-						<a class="common simple red width-80" onclick="projHRoff();">Main House-Right OFF<br></a>
+						<a class="common simple red width-80" onclick="waciBox(wc, mainLeft, nope, power_off);">Main House-Left OFF<br></a>
 					</td>
 				</tr>
 				<tr class="table-buttons">
 					<td class="table-buttons">
-						<a class="common simple green width-80" onclick="projFBHLon();">Foldback House-Left ON<br></a>
+						<a class="common simple green width-80" onclick="waciBox(wc, mainRight, nope, power_on);">Main House-Right ON<br></a>
 					</td>
 					<td class="table-buttons">
-						<a class="common simple red width-80" onclick="projFBHLoff();">Foldback House-Left OFF<br></a>
-					</td>
-				</tr>
-				<tr class="table-buttons">
-					<td class="table-buttons">
-						<a class="common simple green width-80" onclick="projFBHRon();">Foldback House-Right ON<br></a>
-					</td>
-					<td class="table-buttons">
-						<a class="common simple red width-80" onclick="projFBHRoff();">Foldback House-Right OFF<br></a>
+						<a class="common simple red width-80" onclick="waciBox(wc, mainRight, nope, power_off);">Main House-Right OFF<br></a>
 					</td>
 				</tr>
 				<tr class="table-buttons">
 					<td class="table-buttons">
-						<a class="common simple green width-80" onclick="projCHLon();">Center House-Left ON<br></a>
+						<a class="common simple green width-80" onclick="waciBox(wc, foldbackLeft, nope, power_on);">Foldback House-Left ON<br></a>
 					</td>
 					<td class="table-buttons">
-						<a class="common simple red width-80" onclick="projCHLoff();">Center House-Left OFF<br></a>
-					</td>
-				</tr>
-				<tr class="table-buttons">
-					<td class="table-buttons">
-						<a class="common simple green width-80" onclick="projCHCon();">Center House-Center ON<br></a>
-					</td>
-					<td class="table-buttons">
-						<a class="common simple red width-80" onclick="projCHCoff();">Center House-Center OFF<br></a>
+						<a class="common simple red width-80" onclick="waciBox(wc, foldbackLeft, nope, power_off);">Foldback House-Left OFF<br></a>
 					</td>
 				</tr>
 				<tr class="table-buttons">
 					<td class="table-buttons">
-						<a class="common simple green width-80" onclick="projCHRon();">Center House-Right ON<br></a>
+						<a class="common simple green width-80" onclick="waciBox(wc, foldbackRight, nope, power_on);">Foldback House-Right ON<br></a>
 					</td>
 					<td class="table-buttons">
-						<a class="common simple red width-80" onclick="projCHRoff();">Center House-Right OFF<br></a>
+						<a class="common simple red width-80" onclick="waciBox(wc, foldbackRight, nope, power_off);">Foldback House-Right OFF<br></a>
 					</td>
 				</tr>
 				<tr class="table-buttons">
 					<td class="table-buttons">
-						<a class="common simple green width-80" onclick="proj8on();">Beam 1 Center ON<br></a>
+						<a class="common simple green width-80" onclick="waciBox(wc, centerLeft, nope, power_on);">Center House-Left ON<br></a>
 					</td>
 					<td class="table-buttons">
-						<a class="common simple red width-80" onclick="proj8off();">Beam 1 Center OFF<br></a>
+						<a class="common simple red width-80" onclick="waciBox(wc, centerLeft, nope, power_off);">Center House-Left OFF<br></a>
+					</td>
+				</tr>
+				<tr class="table-buttons">
+					<td class="table-buttons">
+						<a class="common simple green width-80" onclick="waciBox(wc, centerCenter, nope, power_on);">Center House-Center ON<br></a>
+					</td>
+					<td class="table-buttons">
+						<a class="common simple red width-80" onclick="waciBox(wc, centerCenter, nope, power_off);">Center House-Center OFF<br></a>
+					</td>
+				</tr>
+				<tr class="table-buttons">
+					<td class="table-buttons">
+						<a class="common simple green width-80" onclick="waciBox(wc, centerRight, nope, power_on);">Center House-Right ON<br></a>
+					</td>
+					<td class="table-buttons">
+						<a class="common simple red width-80" onclick="waciBox(wc, centerRight, nope, power_off);">Center House-Right OFF<br></a>
+					</td>
+				</tr>
+				<tr class="table-buttons">
+					<td class="table-buttons">
+						<a class="common simple green width-80" onclick="waciBox(wc, centerBeam1, nope, power_on);">Beam 1 Center ON<br></a>
+					</td>
+					<td class="table-buttons">
+						<a class="common simple red width-80" onclick="waciBox(wc, centerBeam1, nope, power_off);">Beam 1 Center OFF<br></a>
 					</td>
 				</tr>
 			</tbody></table>
