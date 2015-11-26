@@ -113,22 +113,22 @@ function hideBridge(id) {
 	hideStuff(bridgeMainLeft_tc);
 	hideStuff(bridgeMainLeft_mc);
 	hideStuff(bridgeMainLeft_fz);
-	hideStuff(bridgeMainLeft_ks);
+//	hideStuff(bridgeMainLeft_ks);
 	hideStuff(bridgeMainLeft_ls);
 	hideStuff(bridgeMainRight_tc);
 	hideStuff(bridgeMainRight_mc);
 	hideStuff(bridgeMainRight_fz);
-	hideStuff(bridgeMainRight_ks);
+//	hideStuff(bridgeMainRight_ks);
 	hideStuff(bridgeMainRight_ls);
 	hideStuff(bridgeMainCenter_tc);
 	hideStuff(bridgeMainCenter_mc);
 	hideStuff(bridgeMainCenter_fz);
-	hideStuff(bridgeMainCenter_ks);
+//	hideStuff(bridgeMainCenter_ks);
 	hideStuff(bridgeMainCenter_ls);
 	hideStuff(bridgeFoldbackCenter_tc);
 	hideStuff(bridgeFoldbackCenter_mc);
 	hideStuff(bridgeFoldbackCenter_fz);
-	hideStuff(bridgeFoldbackCenter_ks);
+//	hideStuff(bridgeFoldbackCenter_ks);
 	hideStuff(bridgeFoldbackCenter_ls);
 }
 // end of "bridge"
