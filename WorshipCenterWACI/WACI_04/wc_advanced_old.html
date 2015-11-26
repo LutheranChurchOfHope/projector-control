@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"> 
+		<title>Worship Center - advanced controls</title>
+		<link rel="stylesheet" type="text/css" href="common_styles-file.css">
+		<script src="javascript/common_waci-stuff.js"></script>
+		<script src="javascript/projector-vars_wdm-waci.js"></script>
+		<script src="javascript/waci-group-functions.js"></script>
+		<!--
+			Reminder:
+			waciBox(address, port, deviceType, action);
+			address = roomName;
+			port = projectorName;
+		// -->
+	</head>
+
+	<body class="bg-black">
+		<div>
+			<a class="common tiny" onclick="goBack();">Back</a>
+			<br>
+			<br>
+			<img src="graphics/productionlogo_s.png" alt="Production Logo">
+		</div>
+		<hr><hr>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<span class="arial-large light-gray">House Left projector</span>
+					<br><br><br><br><br>
+					<span class="arial-big light-gray">Menu controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple green width-80" onclick="waciBox(wc, mainLeft, nope, menu_on);">Menu ON</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple red width-80" onclick="waciBox(wc, mainLeft, nope, menu_off);">Menu OFF</a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<br>
+				</td>
+			</tr>
+		</table>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainLeft, nope, menu_up);"><img src="graphics/arrow-up.png" alt="Menu Up" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainLeft, nope, menu_left);"><img src="graphics/arrow-left.png" alt="Menu Left" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainLeft, nope, menu_enter);"><img src="graphics/check-mark-green.png" alt="Menu Enter" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainLeft, nope, menu_right);"><img src="graphics/arrow-right.png" alt="Menu Right" width="64" height="64"></a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainLeft, nope, menu_down);"><img src="graphics/arrow-down.png" alt="Menu Down" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+<!-- End Menu //-->
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="3">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Lens Shift //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<span class="arial-big light-gray">Lens Shift controls:</span>
+					<br><br>
+				</td>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainLeft, nope, lens_shift_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainLeft, nope, lens_shift_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainLeft, nope, lens_shift_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainLeft, nope, lens_shift_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+<!-- End Lens Shift //-->
+		</table>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="2">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Focus //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="2">
+					<span class="arial-big light-gray">Focus controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainLeft, nope, focus_in_coarse);">Focus In Coarse</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainLeft, nope, focus_out_coarse);">Focus Out Coarse</a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainLeft, nope, focus_in_fine);">Focus In Fine</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainLeft, nope, focus_out_fine);">Focus Out Fine</a>
+				</td>
+			</tr>
+<!-- End Focus //-->
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="2">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Zoom //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="2">
+					<span class="arial-big light-gray">Zoom controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainLeft, nope, zoom_in);">Zoom In</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainLeft, nope, zoom_out);">Zoom Out</a>
+				</td>
+			</tr>
+<!-- End Zoom //-->
+		</table>
+		<br><br><br><br><br><hr><br><br><br><br><br>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<span class="arial-large light-gray">House Right projector</span>
+					<br><br><br><br><br>
+					<span class="arial-big light-gray">Menu controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple green width-80" onclick="waciBox(wc, mainRight, nope, menu_on);">Menu ON</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple red width-80" onclick="waciBox(wc, mainRight, nope, menu_off);">Menu OFF</a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<br>
+				</td>
+			</tr>
+		</table>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainRight, nope, menu_up);"><img src="graphics/arrow-up.png" alt="Menu Up" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainRight, nope, menu_left);"><img src="graphics/arrow-left.png" alt="Menu Left" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainRight, nope, menu_enter);"><img src="graphics/check-mark-green.png" alt="Menu Enter" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainRight, nope, menu_right);"><img src="graphics/arrow-right.png" alt="Menu Right" width="64" height="64"></a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainRight, nope, menu_down);"><img src="graphics/arrow-down.png" alt="Menu Down" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+<!-- End Menu //-->
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="3">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Lens Shift //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<span class="arial-big light-gray">Lens Shift controls:</span>
+					<br><br>
+				</td>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainRight, nope, lens_shift_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainRight, nope, lens_shift_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainRight, nope, lens_shift_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainRight, nope, lens_shift_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+<!-- End Lens Shift //-->
+		</table>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="2">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Focus //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="2">
+					<span class="arial-big light-gray">Focus controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainRight, nope, focus_in_coarse);">Focus In Coarse</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainRight, nope, focus_out_coarse);">Focus Out Coarse</a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainRight, nope, focus_in_fine);">Focus In Fine</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainRight, nope, focus_out_fine);">Focus Out Fine</a>
+				</td>
+			</tr>
+<!-- End Focus //-->
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="2">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Zoom //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="2">
+					<span class="arial-big light-gray">Zoom controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainRight, nope, zoom_in);">Zoom In</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainRight, nope, zoom_out);">Zoom Out</a>
+				</td>
+			</tr>
+<!-- End Zoom //-->
+		</table>
+		<br><br><br><br><br><hr><br><br><br><br><br>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<span class="arial-large light-gray">Center projector</span>
+					<br><br><br><br><br>
+					<span class="arial-big light-gray">Menu controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple green width-80" onclick="waciBox(wc, mainCenter, nope, menu_on);">Menu ON</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple red width-80" onclick="waciBox(wc, mainCenter, nope, menu_off);">Menu OFF</a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<br>
+				</td>
+			</tr>
+		</table>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainCenter, nope, menu_up);"><img src="graphics/arrow-up.png" alt="Menu Up" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainCenter, nope, menu_left);"><img src="graphics/arrow-left.png" alt="Menu Left" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainCenter, nope, menu_enter);"><img src="graphics/check-mark-green.png" alt="Menu Enter" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainCenter, nope, menu_right);"><img src="graphics/arrow-right.png" alt="Menu Right" width="64" height="64"></a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainCenter, nope, menu_down);"><img src="graphics/arrow-down.png" alt="Menu Down" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+<!-- End Menu //-->
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="3">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Lens Shift //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<span class="arial-big light-gray">Lens Shift controls:</span>
+					<br><br>
+				</td>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainCenter, nope, lens_shift_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainCenter, nope, lens_shift_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainCenter, nope, lens_shift_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, mainCenter, nope, lens_shift_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+<!-- End Lens Shift //-->
+		</table>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="2">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Focus //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="2">
+					<span class="arial-big light-gray">Focus controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainCenter, nope, focus_in_coarse);">Focus In Coarse</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainCenter, nope, focus_out_coarse);">Focus Out Coarse</a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainCenter, nope, focus_in_fine);">Focus In Fine</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainCenter, nope, focus_out_fine);">Focus Out Fine</a>
+				</td>
+			</tr>
+<!-- End Focus //-->
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="2">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Zoom //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="2">
+					<span class="arial-big light-gray">Zoom controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainCenter, nope, zoom_in);">Zoom In</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, mainCenter, nope, zoom_out);">Zoom Out</a>
+				</td>
+			</tr>
+<!-- End Zoom //-->
+		</table>
+		<br><br><br><br><br><hr><br><br><br><br><br>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<span class="arial-large light-gray">Foldback projector</span>
+					<br><br><br><br><br>
+					<span class="arial-big light-gray">Menu controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple green width-80" onclick="waciBox(wc, foldbackCenter, nope, menu_on);">Menu ON</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple red width-80" onclick="waciBox(wc, foldbackCenter, nope, menu_off);">Menu OFF</a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<br>
+				</td>
+			</tr>
+		</table>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, foldbackCenter, nope, menu_up);"><img src="graphics/arrow-up.png" alt="Menu Up" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, foldbackCenter, nope, menu_left);"><img src="graphics/arrow-left.png" alt="Menu Left" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, foldbackCenter, nope, menu_enter);"><img src="graphics/check-mark-green.png" alt="Menu Enter" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, foldbackCenter, nope, menu_right);"><img src="graphics/arrow-right.png" alt="Menu Right" width="64" height="64"></a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, foldbackCenter, nope, menu_down);"><img src="graphics/arrow-down.png" alt="Menu Down" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+<!-- End Menu //-->
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="3">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Lens Shift //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="3">
+					<span class="arial-big light-gray">Lens Shift controls:</span>
+					<br><br>
+				</td>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, foldbackCenter, nope, lens_shift_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, foldbackCenter, nope, lens_shift_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, foldbackCenter, nope, lens_shift_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common-minimal width-80" onclick="waciBox(wc, foldbackCenter, nope, lens_shift_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
+				</td>
+				<td class="table-buttons-borderless">
+					<br>
+				</td>
+			</tr>
+<!-- End Lens Shift //-->
+		</table>
+		<table class="table-buttons-borderless table-align-center">
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="2">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Focus //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="2">
+					<span class="arial-big light-gray">Focus controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, foldbackCenter, nope, focus_in_coarse);">Focus In Coarse</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, foldbackCenter, nope, focus_out_coarse);">Focus Out Coarse</a>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, foldbackCenter, nope, focus_in_fine);">Focus In Fine</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, foldbackCenter, nope, focus_out_fine);">Focus Out Fine</a>
+				</td>
+			</tr>
+<!-- End Focus //-->
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless" colspan="2">
+					<br><br><br><br><br><br><br><br><br><br>
+				</td>
+			</tr>
+<!-- Start Zoom //-->
+			<tr class="table-buttons-borderless">
+				<td colspan="2">
+					<span class="arial-big light-gray">Zoom controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons-borderless">
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, foldbackCenter, nope, zoom_in);">Zoom In</a>
+				</td>
+				<td class="table-buttons-borderless">
+					<a class="common simple blue width-80" onclick="waciBox(wc, foldbackCenter, nope, zoom_out);">Zoom Out</a>
+				</td>
+			</tr>
+<!-- End Zoom //-->
+		</table>
+	</body>
+</html>

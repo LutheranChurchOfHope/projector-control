@@ -53,7 +53,7 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showBridge(bridgeFoldbackCenter);">Foldback Side</a>
+						<a class="common simple yellow normal-width" onclick="showBridge(bridgeFoldbackCenter);">Foldback Center</a>
 					</td>
 				</tr>
 			</table>
@@ -158,7 +158,7 @@
 			<table class="table-buttons-borderless table-align-center">
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<span class="arial-big light-gray">Foldback Side:</span>
+						<span class="arial-big light-gray">Foldback Center:</span>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
@@ -976,7 +976,7 @@
 			<table class="table-buttons-borderless table-align-center">
 				<tr class="table-buttons-borderless">
 					<td colspan="2">
-						<span class="arial-large light-gray">Foldback Side</span>
+						<span class="arial-large light-gray">Foldback Center</span>
 						<br>
 						<span class="arial-big light-gray">Toggle controls:</span>
 						<br><br>
@@ -984,26 +984,26 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, power_on);">Power on</a>
+						<a class="common simple green normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, power_on);">Power on</a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, power_off);">Power off</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, blank_off);">Blank off</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, blank_on);">Blank on</a>
+						<a class="common simple red normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, power_off);">Power off</a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, freeze_off);">Freeze off</a>
+						<a class="common simple green normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, blank_off);">Blank off</a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, freeze_on);">Freeze on</a>
+						<a class="common simple red normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, blank_on);">Blank on</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple green normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, freeze_off);">Freeze off</a>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common simple red normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, freeze_on);">Freeze on</a>
 					</td>
 				</tr>
 			</table>
@@ -1018,7 +1018,7 @@
 			<table class="table-buttons-borderless table-align-center">
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<span class="arial-large light-gray">Foldback Side</span>
+						<span class="arial-large light-gray">Foldback Center</span>
 						<br>
 						<span class="arial-big light-gray">Menu controls:</span>
 						<br><br>
@@ -1026,7 +1026,7 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, menu_toggle);">Menu Toggle</a>
+						<a class="common simple blue normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, menu_toggle);">Menu Toggle</a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
@@ -1041,7 +1041,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, menu_up);"><img src="graphics/arrow-up.png" alt="Menu Up" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, menu_up);"><img src="graphics/arrow-up.png" alt="Menu Up" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -1049,13 +1049,13 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, menu_left);"><img src="graphics/arrow-left.png" alt="Menu Left" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, menu_left);"><img src="graphics/arrow-left.png" alt="Menu Left" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, menu_enter);"><img src="graphics/check-mark-green.png" alt="Menu Enter" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, menu_enter);"><img src="graphics/check-mark-green.png" alt="Menu Enter" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, menu_right);"><img src="graphics/arrow-right.png" alt="Menu Right" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, menu_right);"><img src="graphics/arrow-right.png" alt="Menu Right" width="64" height="64"></a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
@@ -1063,7 +1063,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, menu_down);"><img src="graphics/arrow-down.png" alt="Menu Down" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, menu_down);"><img src="graphics/arrow-down.png" alt="Menu Down" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -1081,7 +1081,7 @@
 			<table class="table-buttons-borderless table-align-center">
 				<tr class="table-buttons-borderless">
 					<td colspan="3">
-						<span class="arial-large light-gray">Foldback Side</span>
+						<span class="arial-large light-gray">Foldback Center</span>
 						<br>
 						<span class="arial-big light-gray">Keystone controls:</span>
 						<br><br>
@@ -1092,7 +1092,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, keystone_up);"><img src="graphics/arrow-up.png" alt="Keystone Up" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, keystone_up);"><img src="graphics/arrow-up.png" alt="Keystone Up" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -1100,13 +1100,13 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, keystone_left);"><img src="graphics/arrow-left.png" alt="Keystone Left" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, keystone_left);"><img src="graphics/arrow-left.png" alt="Keystone Left" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, keystone_right);"><img src="graphics/arrow-right.png" alt="Keystone Right" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, keystone_right);"><img src="graphics/arrow-right.png" alt="Keystone Right" width="64" height="64"></a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
@@ -1114,7 +1114,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, keystone_down);"><img src="graphics/arrow-down.png" alt="Keystone Down" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, keystone_down);"><img src="graphics/arrow-down.png" alt="Keystone Down" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -1133,7 +1133,7 @@
 			<table class="table-buttons-borderless table-align-center">
 				<tr class="table-buttons-borderless">
 					<td colspan="3">
-						<span class="arial-large light-gray">Foldback Side</span>
+						<span class="arial-large light-gray">Foldback Center</span>
 						<br>
 						<span class="arial-big light-gray">Lens Shift controls:</span>
 						<br><br>
@@ -1144,7 +1144,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, lens_shift_coarse_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, lens_shift_coarse_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -1152,13 +1152,13 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, lens_shift_coarse_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, lens_shift_coarse_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<span class="arial-big light-gray">Coarse</span>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, lens_shift_coarse_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, lens_shift_coarse_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
@@ -1166,7 +1166,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, lens_shift_coarse_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, lens_shift_coarse_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -1182,7 +1182,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, lens_shift_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, lens_shift_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -1190,13 +1190,13 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, lens_shift_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, lens_shift_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<span class="arial-big light-gray">Fine</span>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, lens_shift_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, lens_shift_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
@@ -1204,7 +1204,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, lens_shift_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, lens_shift_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -1221,7 +1221,7 @@
 			<table class="table-buttons-borderless table-align-center">
 				<tr class="table-buttons-borderless">
 					<td colspan="2">
-						<span class="arial-large light-gray">Foldback Side</span>
+						<span class="arial-large light-gray">Foldback Center</span>
 						<br>
 						<span class="arial-big light-gray">Focus/Zoom controls:</span>
 						<br><br>
@@ -1229,10 +1229,10 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, focus_in);">Focus In</a>
+						<a class="common simple blue normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, focus_in);">Focus In</a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, focus_out);">Focus Out</a>
+						<a class="common simple blue normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, focus_out);">Focus Out</a>
 					</td>
 				</tr>
 <!-- End Focus //-->
@@ -1244,10 +1244,10 @@
 <!-- Start Zoom //-->
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, zoom_in);">Zoom In</a>
+						<a class="common simple blue normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, zoom_in);">Zoom In</a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(bridge, foldbackSide, sanyoPLC, zoom_out);">Zoom Out</a>
+						<a class="common simple blue normal-width" onclick="extronBox(bridge, foldbackCenter, sanyoPLC, zoom_out);">Zoom Out</a>
 					</td>
 				</tr>
 <!-- End Zoom //-->

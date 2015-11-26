@@ -123,12 +123,12 @@ function hideBridge(id) {
 	hideStuff(bridgeMainCenter_tc);
 	hideStuff(bridgeMainCenter_mc);
 	hideStuff(bridgeMainCenter_fz);
-//	hideStuff(bridgeMainCenter_ks);
+	hideStuff(bridgeMainCenter_ks);
 	hideStuff(bridgeMainCenter_ls);
 	hideStuff(bridgeFoldbackCenter_tc);
 	hideStuff(bridgeFoldbackCenter_mc);
 	hideStuff(bridgeFoldbackCenter_fz);
-//	hideStuff(bridgeFoldbackCenter_ks);
+	hideStuff(bridgeFoldbackCenter_ks);
 	hideStuff(bridgeFoldbackCenter_ls);
 }
 // end of "bridge"
