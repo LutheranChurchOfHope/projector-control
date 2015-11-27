@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"> 
+		<title>Room 212 controls</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet/common_styles-file.css">
+		<script type="text/javascript" src="javascript/common_extron-stuff.js"></script>
+		<script type="text/javascript" src="javascript/projector-vars_wdm.js"></script>
+		<!--
+			Reminder:
+			extronBox(address, port, deviceType, action);
+			address = roomName;
+			port = projectorName;
+		// -->
+	</head>
+
+	<body class="bg-black">
+		<div>
+			<a class="common tiny" onclick="goBack();">Back</a>
+			<br>
+			<br>
+			<img src="graphics/productionlogo_s.png" alt="Production Logo">
+		</div>
+		<table class="table-buttons full-width table-align-center">
+			<tr class="table-buttons">
+				<td colspan="2">
+					<span class="arial-big light-gray">Projector power controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(rm212, mainCenter, sanyoPLC, power_on);">Projector ON</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(rm212, mainCenter, sanyoPLC, power_off);">Projector OFF</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<br>
+					<br>
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td colspan="2">
+					<span class="arial-big light-gray">Other projector controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(rm212, mainCenter, sanyoPLC, freeze_off);">Freeze OFF</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(rm212, mainCenter, sanyoPLC, freeze_on);">Freeze ON</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(rm212, mainCenter, sanyoPLC, blank_off);">Blank OFF</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(rm212, mainCenter, sanyoPLC, blank_on);">Blank ON</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(rm212, mainScreen, daLite, screen_down);">Screen DOWN</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(rm212, mainScreen, daLite, screen_up);">Screen UP</a>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+	
+</html>
