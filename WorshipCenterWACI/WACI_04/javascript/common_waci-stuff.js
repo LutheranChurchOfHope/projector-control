@@ -214,15 +214,10 @@ Done!
 var nope = 'nope';
 var wc = 'wc';
 
-var auto_adjust = 'auto-adjust';
 var blank_off = 'blank-off';
 var blank_on = 'blank-on';
 var focus_in = 'focus-in';
-var focus_in_coarse = 'focus-in-coarse';
-var focus_in_fine = 'focus-in-fine';
 var focus_in = 'focus-out';
-var focus_out_coarse = 'focus-out-coarse';
-var focus_out_fine = 'focus-out-fine';
 var freeze_off = 'freeze-off';
 var freeze_on = 'freeze-on';
 var image1_recall = 'image1-recall';
@@ -244,10 +239,6 @@ var lens_shift_down = 'lens-shift-down';
 var lens_shift_left = 'lens-shift-left';
 var lens_shift_right = 'lens-shift-right';
 var lens_shift_up = 'lens-shift-up';
-var lens_shift_coarse_down = 'lens-shift-coarse-down';
-var lens_shift_coarse_left = 'lens-shift-coarse-left';
-var lens_shift_coarse_right = 'lens-shift-coarse-right';
-var lens_shift_coarse_up = 'lens-shift-coarse-up';
 var menu_down = 'menu-down';
 var menu_enter = 'menu-enter';
 var menu_left = 'menu-left';
@@ -261,11 +252,7 @@ var power_on = 'power-on';
 var screen_down = 'screen-down';
 var screen_up = 'screen-up';
 var zoom_in = 'zoom-in';
-var zoom_in_coarse = 'zoom-in-coarse';
-var zoom_in_fine = 'zoom-in-fine';
 var zoom_out = 'zoom-out';
-var zoom_out_coarse = 'zoom-out-coarse';
-var zoom_out_fine = 'zoom-out-fine';
 
 
 
@@ -280,15 +267,10 @@ Organization should be alphabetical by name.
 Not all actions are supported by all devices. Here are the
 actions that are supported on at least one device:
 
-	auto-adjust
 	blank-off
 	blank-on
 	focus-in
-	focus-in-coarse
-	focus-in-fine
 	focus-out
-	focus-out-coarse
-	focus-out-fine
 	freeze-off
 	freeze-on
 	image1-recall
@@ -310,10 +292,6 @@ actions that are supported on at least one device:
 	lens-shift-left
 	lens-shift-right
 	lens-shift-up
-	lens-shift-coarse-down
-	lens-shift-coarse-left
-	lens-shift-coarse-right
-	lens-shift-coarse-up
 	menu-down
 	menu-enter
 	menu-left
@@ -327,11 +305,7 @@ actions that are supported on at least one device:
 	screen-down
 	screen-up
 	zoom-in
-	zoom-in-coarse
-	zoom-in-fine
 	zoom-out
-	zoom-out-coarse
-	zoom-out-fine
 
 
 Note that strings use dashes, whereas variables use underscores.
@@ -419,9 +393,6 @@ function waciBox (address, port, deviceType, action)
 
 		switch (action)
 			{
-			case 'auto-adjust':
-				command = 'AUTOADJUST';
-				break;
 			case 'blank-off':
 				command = 'blankoff';
 				break;
@@ -458,20 +429,6 @@ function waciBox (address, port, deviceType, action)
 			case 'input-7':
 				command = 'input7';
 				break;
-/*
-			case 'keystone-down':
-				command = 'KEYSTONEDOWN';
-				break;
-			case 'keystone-left':
-				command = 'KEYSTONELEFT';
-				break;
-			case 'keystone-right':
-				command = 'KEYSTONERIGHT';
-				break;
-			case 'keystone-up':
-				command = 'KEYSTONERIGHT';
-				break;
-*/
 			case 'lens-shift-down':
 				command = 'lensshift_down';
 				break;
@@ -484,20 +441,6 @@ function waciBox (address, port, deviceType, action)
 			case 'lens-shift-up':
 				command = 'lensshift_up';
 				break;
-/*
-			case 'lens-shift-coarse-down':
-				command = 'LENSSHIFTCOARSEDOWN';
-				break;
-			case 'lens-shift-coarse-left':
-				command = 'LENSSHIFTCOARSELEFT';
-				break;
-			case 'lens-shift-coarse-right':
-				command = 'LENSSHIFTCOARSERIGHT';
-				break;
-			case 'lens-shift-coarse-up':
-				command = 'LENSSHIFTCOARSEUP';
-				break;
-*/
 			case 'menu-down':
 				command = 'point_down';
 				break;
