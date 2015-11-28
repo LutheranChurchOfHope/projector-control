@@ -105,6 +105,16 @@ function hideWC(id) {
 	hideStuff(wcCenterCenter_fz);
 	hideStuff(wcCenterCenter_ks);
 	hideStuff(wcCenterCenter_ls);
+	hideStuff(wcCenterLeft_tc);
+	hideStuff(wcCenterLeft_mc);
+	hideStuff(wcCenterLeft_fz);
+	hideStuff(wcCenterLeft_ks);
+	hideStuff(wcCenterLeft_ls);
+	hideStuff(wcCenterRight_tc);
+	hideStuff(wcCenterRight_mc);
+	hideStuff(wcCenterRight_fz);
+	hideStuff(wcCenterRight_ks);
+	hideStuff(wcCenterRight_ls);
 	hideStuff(wcFoldbackLeft_tc);
 	hideStuff(wcFoldbackLeft_mc);
 	hideStuff(wcFoldbackLeft_fz);
