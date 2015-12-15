@@ -1,0 +1,63 @@
+	
+	#mainTop{display:block;}
+
+	#wcMainLeft{display:none;}
+	#wcMainRight{display:none;}
+	#wcCenterCenter{display:none;}
+	#wcCenterLeft{display:none;}
+	#wcCenterRight{display:none;}
+	#wcFoldbackLeft{display:none;}
+	#wcFoldbackRight{display:none;}
+
+	/*
+		that's the "main" segment code,
+		now here's the "individual" segment code:
+	*/
+	
+	#wcMainLeft_tc{display:none;}
+	#wcMainLeft_mc{display:none;}
+	#wcMainLeft_fz{display:none;}
+	#wcMainLeft_ks{display:none;}
+	#wcMainLeft_ls{display:none;}
+
+	#wcMainRight_tc{display:none;}
+	#wcMainRight_mc{display:none;}
+	#wcMainRight_fz{display:none;}
+	#wcMainRight_ks{display:none;}
+	#wcMainRight_ls{display:none;}
+
+	#wcCenterCenter_tc{display:none;}
+	#wcCenterCenter_mc{display:none;}
+	#wcCenterCenter_fz{display:none;}
+	#wcCenterCenter_ks{display:none;}
+	#wcCenterCenter_ls{display:none;}
+
+	#wcCenterRight_tc{display:none;}
+	#wcCenterRight_mc{display:none;}
+	#wcCenterRight_fz{display:none;}
+	#wcCenterRight_ks{display:none;}
+	#wcCenterRight_ls{display:none;}
+
+	#wcCenterLeft_tc{display:none;}
+	#wcCenterLeft_mc{display:none;}
+	#wcCenterLeft_fz{display:none;}
+	#wcCenterLeft_ks{display:none;}
+	#wcCenterLeft_ls{display:none;}
+
+	#wcFoldbackLeft_tc{display:none;}
+	#wcFoldbackLeft_mc{display:none;}
+	#wcFoldbackLeft_fz{display:none;}
+	#wcFoldbackLeft_ks{display:none;}
+	#wcFoldbackLeft_ls{display:none;}
+	
+	#wcFoldbackRight_tc{display:none;}
+	#wcFoldbackRight_mc{display:none;}
+	#wcFoldbackRight_fz{display:none;}
+	#wcFoldbackRight_ks{display:none;}
+	#wcFoldbackRight_ls{display:none;}
+	
+	/*
+		#{display:none;}
+		#{display:none;}
+		#{display:none;}
+	*/
