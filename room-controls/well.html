@@ -14,14 +14,28 @@
 			port = projectorName;
 		// -->
 		<script type="text/javascript">
-			function plasmasOFF() {
-				window.setTimeout("extronBox(well, mainOne, lgTV, stupid_sync);",250);
-				window.setTimeout("extronBox(well, mainOne, lgTV, power_off);",500);
+			function masterON() {
+                window.setTimeout("extronBox(well, mainThree, lgTV, stupid_sync);",250);
+				window.setTimeout("extronBox(well, mainThree, lgTV, power_on);",500);
+				window.setTimeout("extronBox(well, mainTwo, lgTV, stupid_sync);",1250);
+				window.setTimeout("extronBox(well, mainTwo, lgTV, power_on);",1500);
+				window.setTimeout("extronBox(well, mainOne, lgTV, stupid_sync);",2250);
+				window.setTimeout("extronBox(well, mainOne, lgTV, power_on);",2500);
+                window.setTimeout("extronBox(well, foldbackTV, lgTV, stupid_sync);",3250);
+                window.setTimeout("extronBox(well, foldbackTV, lgTV, power_on);",3500);
+                window.setTimeout("extronBox(well, mainCenter, sanyoPLC, power_on);")
+            }
+            function masterOFF() {
+                window.setTimeout("extronBox(well, mainThree, lgTV, stupid_sync);",250);
+				window.setTimeout("extronBox(well, mainThree, lgTV, power_off);",500);
 				window.setTimeout("extronBox(well, mainTwo, lgTV, stupid_sync);",1250);
 				window.setTimeout("extronBox(well, mainTwo, lgTV, power_off);",1500);
-				window.setTimeout("extronBox(well, mainThree, lgTV, stupid_sync);",2250);
-				window.setTimeout("extronBox(well, mainThree, lgTV, power_off);",2500);
-			}
+				window.setTimeout("extronBox(well, mainOne, lgTV, stupid_sync);",2250);
+				window.setTimeout("extronBox(well, mainOne, lgTV, power_off);",2500);
+                window.setTimeout("extronBox(well, foldbackTV, lgTV, stupid_sync);",3250);
+                window.setTimeout("extronBox(well, foldbackTV, lgTV, power_off);",3500);
+                window.setTimeout("extronBox(well, mainCenter, sanyoPLC, power_off);")
+            }
 			function plasmasON() {
 				window.setTimeout("extronBox(well, mainThree, lgTV, stupid_sync);",250);
 				window.setTimeout("extronBox(well, mainThree, lgTV, power_on);",500);
@@ -29,6 +43,14 @@
 				window.setTimeout("extronBox(well, mainTwo, lgTV, power_on);",1500);
 				window.setTimeout("extronBox(well, mainOne, lgTV, stupid_sync);",2250);
 				window.setTimeout("extronBox(well, mainOne, lgTV, power_on);",2500);
+			}
+            function plasmasOFF() {
+				window.setTimeout("extronBox(well, mainOne, lgTV, stupid_sync);",250);
+				window.setTimeout("extronBox(well, mainOne, lgTV, power_off);",500);
+				window.setTimeout("extronBox(well, mainTwo, lgTV, stupid_sync);",1250);
+				window.setTimeout("extronBox(well, mainTwo, lgTV, power_off);",1500);
+				window.setTimeout("extronBox(well, mainThree, lgTV, stupid_sync);",2250);
+				window.setTimeout("extronBox(well, mainThree, lgTV, power_off);",2500);
 			}
 		</script>
 
@@ -44,6 +66,23 @@
 		<table class="table-buttons full-width table-align-center">
 			<tr class="table-buttons">
 				<td colspan="2">
+					<span class="arial-big light-gray">Master control:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="masterON();">Master ON</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="masterOFF();">Master OFF</a>
+				</td>
+			</tr>
+            <tr class="table-buttons">
+                <td colspan="2">
+                    <br>
+					<br>
+					<br>
+					<br>
 					<span class="arial-big light-gray">Power controls:</span>
 				</td>
 			</tr>
