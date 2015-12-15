@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"> 
+		<title>Chapel controls</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet/common_styles-file.css">
+		<script type="text/javascript" src="javascript/common_extron-stuff.js"></script>
+		<script type="text/javascript" src="javascript/projector-vars_wdm.js"></script>
+		<!--
+			Reminder:
+			extronBox(address, port, deviceType, action);
+			address = roomName;
+			port = projectorName;
+		// -->
+	</head>
+
+	<body class="bg-black">
+		<div>
+			<a class="common tiny" onclick="goBack();">Back</a>
+			<br>
+			<br>
+			<img src="graphics/productionlogo_s.png" alt="Production Logo">
+		</div>
+		<table class="table-buttons full-width table-align-center">
+			<tr class="table-buttons">
+				<td colspan="2">
+					<span class="arial-big light-gray">Projector power controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(chapel, mainSide, panasonicPJLink, power_on);">Side ON</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(chapel, mainSide, panasonicPJLink, power_off);">Side OFF</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(chapel, mainCenter, sanyoPLC, power_on);">Center ON</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(chapel, mainCenter, sanyoPLC, power_off);">Center OFF</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(chapel, foldbackSide, sanyoPLC, power_on);">Foldback ON</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(chapel, foldbackSide, sanyoPLC, power_off);">Foldback OFF</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<br>
+					<br>
+					<br>
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td colspan="2">
+					<span class="arial-big light-gray">Other projector controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(chapel, mainSide, panasonicPJLink, blank_off);">Side Blank OFF</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(chapel, mainSide, panasonicPJLink, blank_on);">Side Blank ON</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(chapel, mainSide, panasonicPJLink, freeze_off);">Side Freeze OFF</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(chapel, mainSide, panasonicPJLink, freeze_on);">Side Freeze ON</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<br>
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(chapel, mainCenter, sanyoPLC, blank_off);">Center Blank OFF</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(chapel, mainCenter, sanyoPLC, blank_on);">Center Blank ON</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(chapel, mainCenter, sanyoPLC, freeze_off);">Center Freeze OFF</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(chapel, mainCenter, sanyoPLC, freeze_on);">Center Freeze ON</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<br>
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(chapel, foldbackSide, sanyoPLC, blank_off);">Foldback Blank OFF</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(chapel, foldbackSide, sanyoPLC, blank_on);">Foldback Blank ON</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(chapel, foldbackSide, sanyoPLC, freeze_off);">Foldback Freeze OFF</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(chapel, foldbackSide, sanyoPLC, freeze_on);">Foldback Freeze ON</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons" colspan="2">
+					<br><br>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons" colspan="2">
+					<a class="common simple yellow width-90" href="chapel_advanced.html">Advanced Controls</a>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+	
+</html>

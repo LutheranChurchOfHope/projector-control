@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"> 
+		<title>Large Venue controls</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet/common_styles-file.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/show-hide_waci.css">
+			<!--
+			Reminder:
+			waciBox(address, port, deviceType, action);
+			address = roomName;
+			port = projectorName;
+		// -->
+		<script>
+		function goBack()
+		{
+		window.history.back();
+		}
+		</script>
+	</head>
+
+	<body class="bg-black" onload="showWC(mainTop);">
+		<div>
+			<a class="common tiny" onclick="goBack();">Back</a>
+			<br>
+			<br>
+			<img src="graphics/productionlogo_s.png" alt="Production Logo">
+		</div>
+		<br>
+		<div>
+			<a class="common tiny" onclick="showWC(mainTop);">[ main menu ]</a>
+		</div>
+		<br>
+		<div id="mainTop">
+			<table class="table-buttons-borderless table-align-center">
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<span class="arial-big light-gray">Large Venue Advanced projectors:</span>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple yellow width-90" href="http://10.40.30.75/bridge_advanced.html">Bridge<br>Advanced projector control</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple yellow width-90" href="http://10.40.30.70/chapel_advanced.html">Chapel<br>Advanced projector control</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple yellow width-90" href="http://10.40.30.65/gym_advanced.html">Gym<br>Advanced projector control</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+<!--
+
+JUNK STUFF - 
+
+ONLY HERE FOR TESTING
+
+
+REMOVE THIS BLOCK WHEN DONE
+
+
+(AS WELL AS JUNK BELOW IT)
+
+
+!!!!!!!!!!!!!!
+
+
+//-->
+
+	</body>
+</html>
