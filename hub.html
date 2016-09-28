@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"> 
+		<title>Hub controls</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet/common_styles-file.css">
+		<script type="text/javascript" src="javascript/common_extron-stuff.js"></script>
+		<script type="text/javascript" src="javascript/projector-vars_jg.js"></script>
+		<!--
+			Reminder:
+			extronBox(address, port, deviceType, action);
+			address = roomName;
+			port = projectorName;
+		// -->
+	</head>
+
+	<body class="bg-black">
+		<div>
+			<a class="common tiny" onclick="goBack();">Back</a>
+			<br>
+			<br>
+			<img src="graphics/productionlogo_s.png" alt="Production Logo">
+		</div>
+		<table class="table-buttons full-width table-align-center">
+			<tr class="table-buttons">
+				<td colspan="2">
+					<span class="arial-big light-gray">Projector power controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(hub, mainScreen, panasonicPJLink, power_on);">Main ON</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(hub, mainScreen, panasonicPJLink, power_off);">Main OFF</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td colspan="2">
+					<span class="arial-big light-gray">TV power controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(hub, tVs, sharpTV, power_on);">Main TV's ON</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(hub, tVs, sharpTV, power_off);">Main TV's OFF</a>
+				</td>
+			</tr><tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(hub, foldback, sharpTV, power_on);">Foldback ON</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(hub, foldback, sharpTV, power_off);">Foldback OFF</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<br>
+					<br>
+					<br>
+					<br>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td colspan="2">
+					<span class="arial-big light-gray">Other projector controls:</span>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(hub, mainScreen, panasonicPJLink, blank_off);">Main Blank OFF</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(hub, mainScreen, panasonicPJLink, blank_on);">Main Blank ON</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<a class="common simple green width-80" onclick="extronBox(hub, mainScreen, panasonicPJLink, freeze_off);">Main Freeze OFF</a>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple red width-80" onclick="extronBox(hub, mainScreen, panasonicPJLink, freeze_on);">Main Freeze ON</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons" colspan="2">
+					<a class="common simple yellow width-90" href="hub_advanced.html">Advanced Controls</a>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+	
+</html>
