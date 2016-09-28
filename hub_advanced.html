@@ -5,10 +5,10 @@
 		<meta charset="utf-8"> 
 		<title>Hub controls</title>
 		<link rel="stylesheet" type="text/css" href="stylesheet/common_styles-file.css">
-		<link rel="stylesheet" type="text/css" href="stylesheet/show-hide_wdm.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/show-hide_jg.css">
 		<script type="text/javascript" src="javascript/common_extron-stuff.js"></script>
 		<script type="text/javascript" src="javascript/projector-vars_jg.js"></script>
-		<script type="text/javascript" src="javascript/show-hide_wdm.js"></script>
+		<script type="text/javascript" src="javascript/show-hide_jg.js"></script>
 		<!--
 			Reminder:
 			extronBox(address, port, deviceType, action);
@@ -17,7 +17,7 @@
 		// -->
 	</head>
 
-	<body class="bg-black" onload="showChapel(mainTop);">
+	<body class="bg-black" onload="showHub(mainTop);">
 		<div>
 			<a class="common tiny" onclick="goBack();">Back</a>
 			<br>
@@ -26,7 +26,7 @@
 		</div>
 		<br>
 		<div>
-			<a class="common tiny" onclick="showChapel(mainTop);">[ main menu ]</a>
+			<a class="common tiny" onclick="showHub(mainTop);">[ main menu ]</a>
 		</div>
 		<br>
 		<div id="mainTop">
@@ -38,13 +38,13 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelMainSide);">Main</a>
+						<a class="common simple yellow normal-width" onclick="showHub(hubMainScreen);">Main</a>
 					</td>
 				</tr>
 			</table>
 		</div>
 
-		<div id="chapelMainSide">
+		<div id="hubMainScreen">
 			<table class="table-buttons-borderless table-align-center">
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
@@ -53,114 +53,30 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelMainSide_tc);">Toggle controls</a>
+						<a class="common simple yellow normal-width" onclick="showHub(hubMainScreen_tc);">Toggle controls</a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelMainSide_mc);">Menu controls</a>
+						<a class="common simple yellow normal-width" onclick="showHub(hubMainScreen_mc);">Menu controls</a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelMainSide_ls);">Lens shift controls</a>
+						<a class="common simple yellow normal-width" onclick="showHub(hubMainScreen_ls);">Lens shift controls</a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelMainSide_fz);">Focus/zoom controls</a>
+						<a class="common simple yellow normal-width" onclick="showHub(hubMainScreen_fz);">Focus/zoom controls</a>
 					</td>
 				</tr>
 			</table>
 		</div>
-
-		<div id="chapelMainCenter">
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<span class="arial-big light-gray">Main Center:</span>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelMainCenter_tc);">Toggle controls</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelMainCenter_mc);">Menu controls</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelMainCenter_ks);">Keystone controls</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelMainCenter_ls);">Lens shift controls</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelMainCenter_fz);">Focus/zoom controls</a>
-					</td>
-				</tr>
-			</table>
-		</div>
-
-		<div id="chapelFoldbackSide">
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<span class="arial-big light-gray">Foldback Side:</span>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelFoldbackSide_tc);">Toggle controls</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelFoldbackSide_mc);">Menu controls</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelFoldbackSide_ks);">Keystone controls</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelFoldbackSide_ls);">Lens shift controls</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple yellow normal-width" onclick="showChapel(chapelFoldbackSide_fz);">Focus/zoom controls</a>
-					</td>
-				</tr>
-			</table>
-		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Start Toggles //-->
-		<div id="chapelMainSide_tc">
+		<div id="hubMainScreen_tc">
 			<span>
-				<a class="common tiny" onclick="showChapel(chapelMainSide);">[ previous menu ]</a>
+				<a class="common tiny" onclick="showHub(hubMainScreen);">[ previous menu ]</a>
 			</span>
 			<table class="table-buttons-borderless table-align-center">
 				<tr class="table-buttons-borderless">
@@ -173,26 +89,26 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, power_on);">Power on</a>
+						<a class="common simple green normal-width" onclick="extronBox(hub, MainScreen, panasonicPJLink, power_on);">Power on</a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, power_off);">Power off</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, blank_off);">Blank off</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, blank_on);">Blank on</a>
+						<a class="common simple red normal-width" onclick="extronBox(hub, MainScreen, panasonicPJLink, power_off);">Power off</a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, freeze_off);">Freeze off</a>
+						<a class="common simple green normal-width" onclick="extronBox(hub, MainScreen, panasonicPJLink, blank_off);">Blank off</a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, freeze_on);">Freeze on</a>
+						<a class="common simple red normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, blank_on);">Blank on</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple green normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, freeze_off);">Freeze off</a>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common simple red normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, freeze_on);">Freeze on</a>
 					</td>
 				</tr>
 			</table>
@@ -200,9 +116,9 @@
 <!-- End Toggles //-->
 
 <!-- Start Menu //-->
-		<div id="chapelMainSide_mc">
+		<div id="hubMainScreen_mc">
 			<span>
-				<a class="common tiny" onclick="showChapel(chapelMainSide);">[ previous menu ]</a>
+				<a class="common tiny" onclick="showHub(hubMainScreen);">[ previous menu ]</a>
 			</span>
 			<table class="table-buttons-borderless table-align-center">
 				<tr class="table-buttons-borderless">
@@ -215,7 +131,7 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, menu_toggle);">Menu Toggle</a>
+						<a class="common simple blue normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, menu_toggle);">Menu Toggle</a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
@@ -230,7 +146,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, menu_up);"><img src="graphics/arrow-up.png" alt="Menu Up" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, menu_up);"><img src="graphics/arrow-up.png" alt="Menu Up" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -238,13 +154,13 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, menu_left);"><img src="graphics/arrow-left.png" alt="Menu Left" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, menu_left);"><img src="graphics/arrow-left.png" alt="Menu Left" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, menu_enter);"><img src="graphics/check-mark-green.png" alt="Menu Enter" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, menu_enter);"><img src="graphics/check-mark-green.png" alt="Menu Enter" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, menu_right);"><img src="graphics/arrow-right.png" alt="Menu Right" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, menu_right);"><img src="graphics/arrow-right.png" alt="Menu Right" width="64" height="64"></a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
@@ -252,7 +168,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, menu_down);"><img src="graphics/arrow-down.png" alt="Menu Down" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, menu_down);"><img src="graphics/arrow-down.png" alt="Menu Down" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -264,9 +180,9 @@
 
 
 <!-- Start Lens Shift //-->
-		<div id="chapelMainSide_ls">
+		<div id="hubMainScreen_ls">
 			<span>
-				<a class="common tiny" onclick="showChapel(chapelMainSide);">[ previous menu ]</a>
+				<a class="common tiny" onclick="showHub(hubMainScreen);">[ previous menu ]</a>
 			</span>
 			<table class="table-buttons-borderless table-align-center">
 				<tr class="table-buttons-borderless">
@@ -282,7 +198,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, lens_shift_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, lens_shift_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -290,13 +206,13 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, lens_shift_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, lens_shift_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, lens_shift_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, lens_shift_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
@@ -304,7 +220,7 @@
 						<br>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, lens_shift_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
+						<a class="common-minimal normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, lens_shift_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
 					</td>
 					<td class="table-buttons-borderless">
 						<br>
@@ -314,9 +230,9 @@
 		</div>
 <!-- End Lens Shift //-->
 <!-- Start Focus //-->
-		<div id="chapelMainSide_fz">
+		<div id="hubMainScreen_fz">
 			<span>
-				<a class="common tiny" onclick="showChapel(chapelMainSide);">[ previous menu ]</a>
+				<a class="common tiny" onclick="showHub(hubMainScreen);">[ previous menu ]</a>
 			</span>
 			<table class="table-buttons-borderless table-align-center">
 				<tr class="table-buttons-borderless">
@@ -329,18 +245,18 @@
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, focus_in_coarse);">Focus In Coarse</a>
+						<a class="common simple blue normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, focus_in_coarse);">Focus In Coarse</a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, focus_out_coarse);">Focus Out Coarse</a>
+						<a class="common simple blue normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, focus_out_coarse);">Focus Out Coarse</a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, focus_in_fine);">Focus In Fine</a>
+						<a class="common simple blue normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, focus_in_fine);">Focus In Fine</a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, focus_out_fine);">Focus Out Fine</a>
+						<a class="common simple blue normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, focus_out_fine);">Focus Out Fine</a>
 					</td>
 				</tr>
 <!-- End Focus //-->
@@ -352,635 +268,23 @@
 <!-- Start Zoom //-->
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, zoom_in_coarse);">Zoom In Coarse</a>
+						<a class="common simple blue normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, zoom_in_coarse);">Zoom In Coarse</a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, zoom_out_coarse);">Zoom Out Coarse</a>
+						<a class="common simple blue normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, zoom_out_coarse);">Zoom Out Coarse</a>
 					</td>
 				</tr>
 				<tr class="table-buttons-borderless">
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, zoom_in_fine);">Zoom In Fine</a>
+						<a class="common simple blue normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, zoom_in_fine);">Zoom In Fine</a>
 					</td>
 					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainSide, panasonicPJLink, zoom_out_fine);">Zoom Out Fine</a>
+						<a class="common simple blue normal-width" onclick="extronBox(hub, mainScreen, panasonicPJLink, zoom_out_fine);">Zoom Out Fine</a>
 					</td>
 				</tr>
 <!-- End Zoom //-->
 			</table>
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Start Toggles //-->
-		<div id="chapelMainCenter_tc">
-			<span>
-				<a class="common tiny" onclick="showChapel(chapelMainCenter);">[ previous menu ]</a>
-			</span>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td colspan="2">
-						<span class="arial-large light-gray">Main Center</span>
-						<br>
-						<span class="arial-big light-gray">Toggle controls:</span>
-						<br><br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, power_on);">Power on</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, power_off);">Power off</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, blank_off);">Blank off</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, blank_on);">Blank on</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, freeze_off);">Freeze off</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, freeze_on);">Freeze on</a>
-					</td>
-				</tr>
-			</table>
-		</div>
-<!-- End Toggles //-->
-
-<!-- Start Menu //-->
-		<div id="chapelMainCenter_mc">
-			<span>
-				<a class="common tiny" onclick="showChapel(chapelMainCenter);">[ previous menu ]</a>
-			</span>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<span class="arial-large light-gray">Main Center</span>
-						<br>
-						<span class="arial-big light-gray">Menu controls:</span>
-						<br><br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, menu_toggle);">Menu Toggle</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-			</table>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, menu_up);"><img src="graphics/arrow-up.png" alt="Menu Up" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, menu_left);"><img src="graphics/arrow-left.png" alt="Menu Left" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, menu_enter);"><img src="graphics/check-mark-green.png" alt="Menu Enter" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, menu_right);"><img src="graphics/arrow-right.png" alt="Menu Right" width="64" height="64"></a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, menu_down);"><img src="graphics/arrow-down.png" alt="Menu Down" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-			</table>
-		</div>
-<!-- End Menu //-->
-
-<!-- Start Keystone //-->
-		<div id="chapelMainCenter_ks">
-			<span>
-				<a class="common tiny" onclick="showChapel(chapelMainCenter);">[ previous menu ]</a>
-			</span>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td colspan="3">
-						<span class="arial-large light-gray">Main Center</span>
-						<br>
-						<span class="arial-big light-gray">Keystone controls:</span>
-						<br><br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, keystone_up);"><img src="graphics/arrow-up.png" alt="Keystone Up" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, keystone_left);"><img src="graphics/arrow-left.png" alt="Keystone Left" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, keystone_right);"><img src="graphics/arrow-right.png" alt="Keystone Right" width="64" height="64"></a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, keystone_down);"><img src="graphics/arrow-down.png" alt="Keystone Down" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-			</table>
-		</div>
-<!-- End Keystone //-->
-
-
-<!-- Start Lens Shift //-->
-		<div id="chapelMainCenter_ls">
-			<span>
-				<a class="common tiny" onclick="showChapel(chapelMainCenter);">[ previous menu ]</a>
-			</span>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td colspan="3">
-						<span class="arial-large light-gray">Main Center</span>
-						<br>
-						<span class="arial-big light-gray">Lens Shift controls:</span>
-						<br><br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, lens_shift_coarse_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, lens_shift_coarse_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<span class="arial-big light-gray">Coarse</span>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, lens_shift_coarse_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, lens_shift_coarse_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless" colspan="3">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, lens_shift_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, lens_shift_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<span class="arial-big light-gray">Fine</span>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, lens_shift_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, lens_shift_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-			</table>
-		</div>
-<!-- End Lens Shift //-->
-<!-- Start Focus //-->
-		<div id="chapelMainCenter_fz">
-			<span>
-				<a class="common tiny" onclick="showChapel(chapelMainCenter);">[ previous menu ]</a>
-			</span>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td colspan="2">
-						<span class="arial-large light-gray">Main Center</span>
-						<br>
-						<span class="arial-big light-gray">Focus/Zoom controls:</span>
-						<br><br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, focus_in);">Focus In</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, focus_out);">Focus Out</a>
-					</td>
-				</tr>
-<!-- End Focus //-->
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless" colspan="2">
-						<br>
-					</td>
-				</tr>
-<!-- Start Zoom //-->
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, zoom_in);">Zoom In</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, mainCenter, sanyoPLC, zoom_out);">Zoom Out</a>
-					</td>
-				</tr>
-<!-- End Zoom //-->
-			</table>
-		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Start Toggles //-->
-		<div id="chapelFoldbackSide_tc">
-			<span>
-				<a class="common tiny" onclick="showChapel(chapelFoldbackSide);">[ previous menu ]</a>
-			</span>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td colspan="2">
-						<span class="arial-large light-gray">Foldback Side</span>
-						<br>
-						<span class="arial-big light-gray">Toggle controls:</span>
-						<br><br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, power_on);">Power on</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, power_off);">Power off</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, blank_off);">Blank off</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, blank_on);">Blank on</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple green normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, freeze_off);">Freeze off</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple red normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, freeze_on);">Freeze on</a>
-					</td>
-				</tr>
-			</table>
-		</div>
-<!-- End Toggles //-->
-
-<!-- Start Menu //-->
-		<div id="chapelFoldbackSide_mc">
-			<span>
-				<a class="common tiny" onclick="showChapel(chapelFoldbackSide);">[ previous menu ]</a>
-			</span>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<span class="arial-large light-gray">Foldback Side</span>
-						<br>
-						<span class="arial-big light-gray">Menu controls:</span>
-						<br><br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, menu_toggle);">Menu Toggle</a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-			</table>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, menu_up);"><img src="graphics/arrow-up.png" alt="Menu Up" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, menu_left);"><img src="graphics/arrow-left.png" alt="Menu Left" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, menu_enter);"><img src="graphics/check-mark-green.png" alt="Menu Enter" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, menu_right);"><img src="graphics/arrow-right.png" alt="Menu Right" width="64" height="64"></a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, menu_down);"><img src="graphics/arrow-down.png" alt="Menu Down" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-			</table>
-		</div>
-<!-- End Menu //-->
-
-<!-- Start Keystone //-->
-		<div id="chapelFoldbackSide_ks">
-			<span>
-				<a class="common tiny" onclick="showChapel(chapelFoldbackSide);">[ previous menu ]</a>
-			</span>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td colspan="3">
-						<span class="arial-large light-gray">Foldback Side</span>
-						<br>
-						<span class="arial-big light-gray">Keystone controls:</span>
-						<br><br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, keystone_up);"><img src="graphics/arrow-up.png" alt="Keystone Up" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, keystone_left);"><img src="graphics/arrow-left.png" alt="Keystone Left" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, keystone_right);"><img src="graphics/arrow-right.png" alt="Keystone Right" width="64" height="64"></a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, keystone_down);"><img src="graphics/arrow-down.png" alt="Keystone Down" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-			</table>
-		</div>
-<!-- End Keystone //-->
-
-
-<!-- Start Lens Shift //-->
-		<div id="chapelFoldbackSide_ls">
-			<span>
-				<a class="common tiny" onclick="showChapel(chapelFoldbackSide);">[ previous menu ]</a>
-			</span>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td colspan="3">
-						<span class="arial-large light-gray">Foldback Side</span>
-						<br>
-						<span class="arial-big light-gray">Lens Shift controls:</span>
-						<br><br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, lens_shift_coarse_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, lens_shift_coarse_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<span class="arial-big light-gray">Coarse</span>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, lens_shift_coarse_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, lens_shift_coarse_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless" colspan="3">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, lens_shift_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, lens_shift_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<span class="arial-big light-gray">Fine</span>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, lens_shift_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common-minimal normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, lens_shift_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
-					</td>
-					<td class="table-buttons-borderless">
-						<br>
-					</td>
-				</tr>
-			</table>
-		</div>
-<!-- End Lens Shift //-->
-<!-- Start Focus //-->
-		<div id="chapelFoldbackSide_fz">
-			<span>
-				<a class="common tiny" onclick="showChapel(chapelFoldbackSide);">[ previous menu ]</a>
-			</span>
-			<table class="table-buttons-borderless table-align-center">
-				<tr class="table-buttons-borderless">
-					<td colspan="2">
-						<span class="arial-large light-gray">Foldback Side</span>
-						<br>
-						<span class="arial-big light-gray">Focus/Zoom controls:</span>
-						<br><br>
-					</td>
-				</tr>
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, focus_in);">Focus In</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, focus_out);">Focus Out</a>
-					</td>
-				</tr>
-<!-- End Focus //-->
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless" colspan="2">
-						<br>
-					</td>
-				</tr>
-<!-- Start Zoom //-->
-				<tr class="table-buttons-borderless">
-					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, zoom_in);">Zoom In</a>
-					</td>
-					<td class="table-buttons-borderless">
-						<a class="common simple blue normal-width" onclick="extronBox(chapel, foldbackSide, sanyoPLC, zoom_out);">Zoom Out</a>
-					</td>
-				</tr>
-<!-- End Zoom //-->
-			</table>
-		</div>
-
-
-
-
-
-
 
 
 

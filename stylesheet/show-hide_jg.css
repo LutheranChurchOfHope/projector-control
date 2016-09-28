@@ -1,0 +1,33 @@
+	
+	#mainTop{display:block;}
+
+	#hubMainScreen{display:none;}
+
+
+	/*
+		that's the "main" segment code,
+		now here's the "individual" segment code:
+	*/
+
+	/*
+		,
+		start of hub;
+	*/
+	
+	#hubMainScreen_tc{display:none;}
+	#hubMainScreen_mc{display:none;}
+	#hubMainScreen_fz{display:none;}
+	#hubMainScreen_ls{display:none;}
+
+	/*
+		end of hub,
+	
+	*/
+
+
+	
+	/*
+		#{display:none;}
+		#{display:none;}
+		#{display:none;}
+	*/
