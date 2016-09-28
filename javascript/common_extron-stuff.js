@@ -524,10 +524,10 @@ function extronBox (address, port, deviceType, action)
 		switch (action)
 		{
 			case 'power-off':
-				command = 'POWR0   ';
+				command = 'POWR%20%200%2B%0d';
 				break;
 			case 'power-on':
-				command = 'POWR1   ';
+				command = 'POWR%20%201%2B%0d';
 				break;
 		}
 		

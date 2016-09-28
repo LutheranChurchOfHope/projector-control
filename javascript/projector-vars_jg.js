@@ -10,7 +10,7 @@ var hub = 'hub';
 // get all our variables ready:
 
 var mainScreen;
-var foldbackCenter;
+var foldback;
 var tVs;
 
 
@@ -32,10 +32,10 @@ function populateVars (address) {
 	switch (address)
 	{
 		case 'hub':
-			foldbackCenter = '01';
+			foldback = '01';
 			mainScreen = '04';
 			tVs = '03';
-			hub = 'http://10.80.9.101/file.html';
+			hub = 'http://10.80.9.101/index.html';
 			break;
 		
 	}
