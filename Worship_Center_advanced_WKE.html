@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"> 
+		<title>Worship Center controls</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet/common_styles-file.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/show-hide_wke.css">
+		<script type="text/javascript" src="javascript/common_extron-stuff.js"></script>
+		<script type="text/javascript" src="javascript/projector-vars_wke.js"></script>
+		<script type="text/javascript" src="javascript/show-hide_wke.js"></script>
+		<!--
+			Reminder:
+			extronBox(address, port, deviceType, action);
+			address = roomName;
+			port = projectorName;
+		// -->
+	</head>
+
+	<body class="bg-black" onload="showWorshipCenter(mainTop);">
+		<div>
+			<a class="common tiny" onclick="goBack();">Back</a>
+			<br>
+			<br>
+			<img src="graphics/productionlogo_s.png" alt="Production Logo">
+		</div>
+		<br>
+		<div>
+			<a class="common tiny" onclick="showWorshipCenter(mainTop);">[ main menu ]</a>
+		</div>
+		<br>
+		<div id="mainTop">
+			<table class="table-buttons-borderless table-align-center">
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<span class="arial-big light-gray">Worship Center projector:</span>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple yellow normal-width" onclick="showWorshipCenter(worshipCenterMainScreen);">Main</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="worshipCenterMainScreen">
+			<table class="table-buttons-borderless table-align-center">
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<span class="arial-big light-gray">Main:</span>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple yellow normal-width" onclick="showWorshipCenter(worshipCenterMainScreen_tc);">Toggle controls</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple yellow normal-width" onclick="showWorshipCenter(worshipCenterMainScreen_mc);">Menu controls</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple yellow normal-width" onclick="showWorshipCenter(worshipCenterMainScreen_ls);">Lens shift controls</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple yellow normal-width" onclick="showWorshipCenter(worshipCenterMainScreen_fz);">Focus/zoom controls</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+<!-- Start Toggles //-->
+		<div id="worshipCenterMainScreen_tc">
+			<span>
+				<a class="common tiny" onclick="showWorshipCenter(worshipCenterMainScreen);">[ previous menu ]</a>
+			</span>
+			<table class="table-buttons-borderless table-align-center">
+				<tr class="table-buttons-borderless">
+					<td colspan="2">
+						<span class="arial-large light-gray">Main Side</span>
+						<br>
+						<span class="arial-big light-gray">Toggle controls:</span>
+						<br><br>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple green normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, power_on);">Power on</a>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common simple red normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, power_off);">Power off</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple green normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, blank_off);">Blank off</a>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common simple red normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, blank_on);">Blank on</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple green normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, freeze_off);">Freeze off</a>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common simple red normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, freeze_on);">Freeze on</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+<!-- End Toggles //-->
+
+<!-- Start Menu //-->
+		<div id="worshipCenterMainScreen_mc">
+			<span>
+				<a class="common tiny" onclick="showWorshipCenter(worshipCenterMainScreen);">[ previous menu ]</a>
+			</span>
+			<table class="table-buttons-borderless table-align-center">
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<span class="arial-large light-gray">Main Side</span>
+						<br>
+						<span class="arial-big light-gray">Menu controls:</span>
+						<br><br>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple blue normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, menu_toggle);">Menu Toggle</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<br>
+					</td>
+				</tr>
+			</table>
+			<table class="table-buttons-borderless table-align-center">
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<br>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common-minimal normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, menu_up);"><img src="graphics/arrow-up.png" alt="Menu Up" width="64" height="64"></a>
+					</td>
+					<td class="table-buttons-borderless">
+						<br>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common-minimal normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, menu_left);"><img src="graphics/arrow-left.png" alt="Menu Left" width="64" height="64"></a>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common-minimal normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, menu_enter);"><img src="graphics/check-mark-green.png" alt="Menu Enter" width="64" height="64"></a>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common-minimal normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, menu_right);"><img src="graphics/arrow-right.png" alt="Menu Right" width="64" height="64"></a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<br>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common-minimal normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, menu_down);"><img src="graphics/arrow-down.png" alt="Menu Down" width="64" height="64"></a>
+					</td>
+					<td class="table-buttons-borderless">
+						<br>
+					</td>
+				</tr>
+			</table>
+		</div>
+<!-- End Menu //-->
+
+
+<!-- Start Lens Shift //-->
+		<div id="worshipCenterMainScreen_ls">
+			<span>
+				<a class="common tiny" onclick="showWorshipCenter(worshipCenterMainScreen);">[ previous menu ]</a>
+			</span>
+			<table class="table-buttons-borderless table-align-center">
+				<tr class="table-buttons-borderless">
+					<td colspan="3">
+						<span class="arial-large light-gray">Main Side</span>
+						<br>
+						<span class="arial-big light-gray">Lens Shift controls:</span>
+						<br><br>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<br>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common-minimal normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, lens_shift_up);"><img src="graphics/arrow-up.png" alt="Lens Shift Up" width="64" height="64"></a>
+					</td>
+					<td class="table-buttons-borderless">
+						<br>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common-minimal normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, lens_shift_left);"><img src="graphics/arrow-left.png" alt="Lens Shift Left" width="64" height="64"></a>
+					</td>
+					<td class="table-buttons-borderless">
+						<br>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common-minimal normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, lens_shift_right);"><img src="graphics/arrow-right.png" alt="Lens Shift Right" width="64" height="64"></a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<br>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common-minimal normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, lens_shift_down);"><img src="graphics/arrow-down.png" alt="Lens Shift Down" width="64" height="64"></a>
+					</td>
+					<td class="table-buttons-borderless">
+						<br>
+					</td>
+				</tr>
+			</table>
+		</div>
+<!-- End Lens Shift //-->
+<!-- Start Focus //-->
+		<div id="worshipCenterMainScreen_fz">
+			<span>
+				<a class="common tiny" onclick="showWorshipCenter(worshipCenterMainScreen);">[ previous menu ]</a>
+			</span>
+			<table class="table-buttons-borderless table-align-center">
+				<tr class="table-buttons-borderless">
+					<td colspan="2">
+						<span class="arial-large light-gray">Main Side</span>
+						<br>
+						<span class="arial-big light-gray">Focus/Zoom controls:</span>
+						<br><br>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple blue normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, focus_in_coarse);">Focus In Coarse</a>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common simple blue normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, focus_out_coarse);">Focus Out Coarse</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple blue normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, focus_in_fine);">Focus In Fine</a>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common simple blue normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, focus_out_fine);">Focus Out Fine</a>
+					</td>
+				</tr>
+<!-- End Focus //-->
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless" colspan="2">
+						<br>
+					</td>
+				</tr>
+<!-- Start Zoom //-->
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple blue normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, zoom_in_coarse);">Zoom In Coarse</a>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common simple blue normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, zoom_out_coarse);">Zoom Out Coarse</a>
+					</td>
+				</tr>
+				<tr class="table-buttons-borderless">
+					<td class="table-buttons-borderless">
+						<a class="common simple blue normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, zoom_in_fine);">Zoom In Fine</a>
+					</td>
+					<td class="table-buttons-borderless">
+						<a class="common simple blue normal-width" onclick="extronBox(worshipCenter, mainScreen, panasonicPJLink, zoom_out_fine);">Zoom Out Fine</a>
+					</td>
+				</tr>
+<!-- End Zoom //-->
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		
+<!--
+
+JUNK STUFF - 
+
+ONLY HERE FOR TESTING
+
+
+REMOVE THIS BLOCK WHEN DONE
+
+
+(AS WELL AS JUNK BELOW IT)
+
+
+!!!!!!!!!!!!!!
+
+
+//-->
+
+	</body>
+</html>
