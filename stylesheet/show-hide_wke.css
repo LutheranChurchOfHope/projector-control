@@ -1,0 +1,33 @@
+	
+	#mainTop{display:block;}
+
+	#worshipCenterMainScreen{display:none;}
+
+
+	/*
+		that's the "main" segment code,
+		now here's the "individual" segment code:
+	*/
+
+	/*
+		,
+		start of hub;
+	*/
+	
+	#worshipCenterMainScreen_tc{display:none;}
+	#worshipCenterMainScreen_mc{display:none;}
+	#worshipCenterMainScreen_fz{display:none;}
+	#worshipCenterMainScreen_ls{display:none;}
+
+	/*
+		end of hub,
+	
+	*/
+
+
+	
+	/*
+		#{display:none;}
+		#{display:none;}
+		#{display:none;}
+	*/
