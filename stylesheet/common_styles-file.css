@@ -46,6 +46,10 @@
 
 .bg-black {
 	background-color: #000000;
+	-webkit-user-select: none; /* Chrome all / safari all */
+	-moz-user-select: none; /* firefox all */
+	-ms-user-select: none; /* IE 10+ */
+	-user-select: none; /* Likely future */
 }
 
 .light-gray {
