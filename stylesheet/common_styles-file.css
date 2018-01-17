@@ -46,11 +46,10 @@
 
 .bg-black {
 	background-color: #000000;
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Chrome all / safari all */
-	-moz-user-select: none; /* firefox all */
-	-ms-user-select: none; /* IE 10+ */
-	-user-select: none; /* Likely future */
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+ 	-moz-user-select: none;     /* Firefox all */
+  	-ms-user-select: none;      /* IE 10+ */
+  	user-select: none;          /* Likely future */   
 }
 
 .light-gray {
@@ -79,7 +78,7 @@
 }
 
 .normal-width {
-width: 75%;
+	width: 75%;
 }
 
 .width-90 {
